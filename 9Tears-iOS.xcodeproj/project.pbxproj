@@ -126,9 +126,8 @@
 		627E3734274E22B1005B037F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				627E3704274E20D5005B037F /* AppDelegate.swift */,
-				627E3706274E20D5005B037F /* SceneDelegate.swift */,
-				627E3708274E20D5005B037F /* ViewController.swift */,
+				627E3739274E237A005B037F /* Application */,
+				627E373A274E238C005B037F /* ViewControllers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -149,6 +148,23 @@
 				627E3712274E20D7005B037F /* Info.plist */,
 			);
 			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		627E3739274E237A005B037F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				627E3704274E20D5005B037F /* AppDelegate.swift */,
+				627E3706274E20D5005B037F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		627E373A274E238C005B037F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				627E3708274E20D5005B037F /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
