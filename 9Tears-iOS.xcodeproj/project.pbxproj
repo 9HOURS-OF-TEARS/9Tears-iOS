@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		22A2F8C0FC5438AB1704114E /* Pods_9Tears_iOS_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B860B02D0E9E996E224B84BD /* Pods_9Tears_iOS_9Tears_iOSUITests.framework */; };
 		627E3705274E20D5005B037F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3704274E20D5005B037F /* AppDelegate.swift */; };
-		627E3707274E20D5005B037F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3706274E20D5005B037F /* SceneDelegate.swift */; };
 		627E3709274E20D5005B037F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3708274E20D5005B037F /* ViewController.swift */; };
 		627E370E274E20D7005B037F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627E370D274E20D7005B037F /* Assets.xcassets */; };
 		627E3711274E20D7005B037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627E370F274E20D7005B037F /* LaunchScreen.storyboard */; };
@@ -44,7 +43,6 @@
 		5CFA293C05842F8F4B59C4DF /* Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		627E3701274E20D5005B037F /* 9Tears-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9Tears-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E3704274E20D5005B037F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		627E3706274E20D5005B037F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		627E3708274E20D5005B037F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		627E370D274E20D7005B037F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627E3710274E20D7005B037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				627E3704274E20D5005B037F /* AppDelegate.swift */,
-				627E3706274E20D5005B037F /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -194,7 +191,6 @@
 				29F4170F6D4CB8852B41EE6E /* Pods-9Tears-iOSTests.debug.xcconfig */,
 				CB9D901B39E193791E48EF7B /* Pods-9Tears-iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -449,7 +445,6 @@
 			files = (
 				627E3709274E20D5005B037F /* ViewController.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
-				627E3707274E20D5005B037F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
