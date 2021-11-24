@@ -8,6 +8,7 @@
 import UIKit
 
 import ReactorKit
+import Atributika
 
 final class SignInViewController: BaseViewController, View {
     
@@ -26,10 +27,8 @@ final class SignInViewController: BaseViewController, View {
     fileprivate struct Font {
         static let titleFont = UIFont(name: "BlackHanSans-Regular", size: 60)
         static let subtitleFont = UIFont.systemFont(ofSize: 16, weight: .regular)
-    }
-    
-    fileprivate struct Style {
         
+        static let signUpFont = Style.font(UIFont(name: "NotoSansKR-Regular", size: 13)!).foregroundColor(UIColor.init(named: "SecondColor")!)
     }
     
     // MARK: - Properties
@@ -66,6 +65,10 @@ final class SignInViewController: BaseViewController, View {
     let signInButton = RankButton().then {
         $0.setTitle("Log in", for: .normal)
     }
+    
+    let signUpButton = UIButton(type: .system).then {
+        $0.setAttributedTitle("회원이 아니신가요?".styleAll(Font.signUpFont).attributedString, for: .normal)
+    }
 
     // MARK: - Inintializing
     init(reactor: Reactor) {
@@ -100,6 +103,7 @@ final class SignInViewController: BaseViewController, View {
         self.view.addSubview(self.emailTextField)
         self.view.addSubview(self.passwordTextField)
         self.view.addSubview(self.signInButton)
+        self.view.addSubview(self.signUpButton)
     }
     
     override func setupConstraints() {
@@ -140,6 +144,11 @@ final class SignInViewController: BaseViewController, View {
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.buttonHiehgt)
+        }
+        
+        self.signUpButton.snp.makeConstraints {
+            $0.top.equalTo(self.signInButton.snp.bottom).offset(10)
+            $0.centerX.equalToSuperview()
         }
     }
     

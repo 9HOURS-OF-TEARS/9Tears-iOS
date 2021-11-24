@@ -68,7 +68,7 @@ final class SignUpViewController: BaseViewController, View {
         $0.textField.isSecureTextEntry = true
     }
     
-    let signInButton = RankButton().then {
+    let signUpButton = RankButton().then {
         $0.setTitle("Sign up", for: .normal)
     }
 
@@ -105,7 +105,7 @@ final class SignUpViewController: BaseViewController, View {
         self.view.addSubview(self.nicknameTextField)
         self.view.addSubview(self.emailTextField)
         self.view.addSubview(self.passwordTextField)
-        self.view.addSubview(self.signInButton)
+        self.view.addSubview(self.signUpButton)
     }
     
     override func setupConstraints() {
@@ -148,7 +148,7 @@ final class SignUpViewController: BaseViewController, View {
             $0.height.equalTo(Metric.textFieldHeight)
         }
         
-        self.signInButton.snp.makeConstraints {
+        self.signUpButton.snp.makeConstraints {
             $0.top.equalTo(self.passwordTextField.snp.bottom).offset(30)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
