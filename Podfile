@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target '9Tears-iOS' do
+target 'SW-9Tears-iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for 9Tears-iOS
+  # Pods for SW-9Tears-iOS
 
   # UI
   pod 'SnapKit'
@@ -38,12 +38,12 @@ target '9Tears-iOS' do
   pod 'CGFloatLiteral'
   pod 'Carte'
 
-  target '9Tears-iOSTests' do
+  target 'SW-9Tears-iOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target '9Tears-iOSUITests' do
+  target 'SW-9Tears-iOSUITests' do
     # Pods for testing
   end
 

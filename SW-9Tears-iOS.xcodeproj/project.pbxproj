@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22A2F8C0FC5438AB1704114E /* Pods_9Tears_iOS_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B860B02D0E9E996E224B84BD /* Pods_9Tears_iOS_9Tears_iOSUITests.framework */; };
 		627E3705274E20D5005B037F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3704274E20D5005B037F /* AppDelegate.swift */; };
 		627E370E274E20D7005B037F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627E370D274E20D7005B037F /* Assets.xcassets */; };
 		627E3711274E20D7005B037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627E370F274E20D7005B037F /* LaunchScreen.storyboard */; };
@@ -38,8 +37,9 @@
 		627E377D274E7D2F005B037F /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3777274E7D2E005B037F /* NotoSansKR-Black.otf */; };
 		627E377E274E7D2F005B037F /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3778274E7D2F005B037F /* NotoSansKR-Light.otf */; };
 		627E377F274E7D2F005B037F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3779274E7D2F005B037F /* NotoSansKR-Bold.otf */; };
-		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
-		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
+		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
+		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
+		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,17 +60,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034A696C30DCD8940E1F371A /* Pods-SW-9Tears-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOSTests/Pods-SW-9Tears-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29F4170F6D4CB8852B41EE6E /* Pods-9Tears-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOSTests/Pods-9Tears-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		329105212BB4E5C837E07AD7 /* Pods-9Tears-iOS-9Tears-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS-9Tears-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFA293C05842F8F4B59C4DF /* Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		627E3701274E20D5005B037F /* 9Tears-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9Tears-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627E3701274E20D5005B037F /* SW-9Tears-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SW-9Tears-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E3704274E20D5005B037F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		627E370D274E20D7005B037F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627E3710274E20D7005B037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		627E3712274E20D7005B037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		627E3717274E20D8005B037F /* 9Tears-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9Tears-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627E3717274E20D8005B037F /* SW-9Tears-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SW-9Tears-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E371B274E20D8005B037F /* _Tears_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSTests.swift; sourceTree = "<group>"; };
-		627E3721274E20D8005B037F /* 9Tears-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9Tears-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		627E3721274E20D8005B037F /* SW-9Tears-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SW-9Tears-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITests.swift; sourceTree = "<group>"; };
 		627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		627E3737274E22F5005B037F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -97,12 +99,16 @@
 		627E3777274E7D2E005B037F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		627E3778274E7D2F005B037F /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		627E3779274E7D2F005B037F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
-		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B860B02D0E9E996E224B84BD /* Pods_9Tears_iOS_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EE0834EFAE0880373D1F18 /* Pods-SW-9Tears-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CB9D901B39E193791E48EF7B /* Pods-9Tears-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-9Tears-iOSTests/Pods-9Tears-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCA816EBA856F39F18FD59B3 /* Pods-9Tears-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.release.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DC4F34CB85CC44EA9C9180A0 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12A6B47D8F776C2F38F85D1 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5FD236EBBDF71D39A57ED27 /* Pods-SW-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C304E280AFA4C0E571AC03 /* Pods-SW-9Tears-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOSTests/Pods-SW-9Tears-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */,
+				C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */,
+				C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A2F8C0FC5438AB1704114E /* Pods_9Tears_iOS_9Tears_iOSUITests.framework in Frameworks */,
+				9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,9 +142,9 @@
 		627E36F8274E20D5005B037F = {
 			isa = PBXGroup;
 			children = (
-				627E3703274E20D5005B037F /* 9Tears-iOS */,
-				627E371A274E20D8005B037F /* 9Tears-iOSTests */,
-				627E3724274E20D8005B037F /* 9Tears-iOSUITests */,
+				627E3703274E20D5005B037F /* SW-9Tears-iOS */,
+				627E371A274E20D8005B037F /* SW-9Tears-iOSTests */,
+				627E3724274E20D8005B037F /* SW-9Tears-iOSUITests */,
 				627E3702274E20D5005B037F /* Products */,
 				808733A000B7C2F27259AB20 /* Pods */,
 				BA8CDFF086F0F581C1D28239 /* Frameworks */,
@@ -148,14 +154,14 @@
 		627E3702274E20D5005B037F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				627E3701274E20D5005B037F /* 9Tears-iOS.app */,
-				627E3717274E20D8005B037F /* 9Tears-iOSTests.xctest */,
-				627E3721274E20D8005B037F /* 9Tears-iOSUITests.xctest */,
+				627E3701274E20D5005B037F /* SW-9Tears-iOS.app */,
+				627E3717274E20D8005B037F /* SW-9Tears-iOSTests.xctest */,
+				627E3721274E20D8005B037F /* SW-9Tears-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		627E3703274E20D5005B037F /* 9Tears-iOS */ = {
+		627E3703274E20D5005B037F /* SW-9Tears-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				627E3772274E68B1005B037F /* Preview.swift */,
@@ -163,24 +169,24 @@
 				627E3735274E22B9005B037F /* Resource */,
 				627E3736274E22C3005B037F /* SupportingFile */,
 			);
-			path = "9Tears-iOS";
+			path = "SW-9Tears-iOS";
 			sourceTree = "<group>";
 		};
-		627E371A274E20D8005B037F /* 9Tears-iOSTests */ = {
+		627E371A274E20D8005B037F /* SW-9Tears-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
 				627E371B274E20D8005B037F /* _Tears_iOSTests.swift */,
 			);
-			path = "9Tears-iOSTests";
+			path = "SW-9Tears-iOSTests";
 			sourceTree = "<group>";
 		};
-		627E3724274E20D8005B037F /* 9Tears-iOSUITests */ = {
+		627E3724274E20D8005B037F /* SW-9Tears-iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
 				627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */,
 				627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */,
 			);
-			path = "9Tears-iOSUITests";
+			path = "SW-9Tears-iOSUITests";
 			sourceTree = "<group>";
 		};
 		627E3734274E22B1005B037F /* Source */ = {
@@ -336,6 +342,12 @@
 				5CFA293C05842F8F4B59C4DF /* Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig */,
 				29F4170F6D4CB8852B41EE6E /* Pods-9Tears-iOSTests.debug.xcconfig */,
 				CB9D901B39E193791E48EF7B /* Pods-9Tears-iOSTests.release.xcconfig */,
+				E5FD236EBBDF71D39A57ED27 /* Pods-SW-9Tears-iOS.debug.xcconfig */,
+				91EE0834EFAE0880373D1F18 /* Pods-SW-9Tears-iOS.release.xcconfig */,
+				DC4F34CB85CC44EA9C9180A0 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.debug.xcconfig */,
+				E12A6B47D8F776C2F38F85D1 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig */,
+				034A696C30DCD8940E1F371A /* Pods-SW-9Tears-iOSTests.debug.xcconfig */,
+				E9C304E280AFA4C0E571AC03 /* Pods-SW-9Tears-iOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -343,9 +355,9 @@
 		BA8CDFF086F0F581C1D28239 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */,
-				B860B02D0E9E996E224B84BD /* Pods_9Tears_iOS_9Tears_iOSUITests.framework */,
-				62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */,
+				4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */,
+				7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */,
+				6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -353,9 +365,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		627E3700274E20D5005B037F /* 9Tears-iOS */ = {
+		627E3700274E20D5005B037F /* SW-9Tears-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 627E372B274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOS" */;
+			buildConfigurationList = 627E372B274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOS" */;
 			buildPhases = (
 				FEA03B7FBEA22B1ADE1C4103 /* [CP] Check Pods Manifest.lock */,
 				627E36FD274E20D5005B037F /* Sources */,
@@ -367,14 +379,14 @@
 			);
 			dependencies = (
 			);
-			name = "9Tears-iOS";
+			name = "SW-9Tears-iOS";
 			productName = "9Tears-iOS";
-			productReference = 627E3701274E20D5005B037F /* 9Tears-iOS.app */;
+			productReference = 627E3701274E20D5005B037F /* SW-9Tears-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		627E3716274E20D8005B037F /* 9Tears-iOSTests */ = {
+		627E3716274E20D8005B037F /* SW-9Tears-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 627E372E274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOSTests" */;
+			buildConfigurationList = 627E372E274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOSTests" */;
 			buildPhases = (
 				58E20C2A0B0C6E0FD926F611 /* [CP] Check Pods Manifest.lock */,
 				627E3713274E20D8005B037F /* Sources */,
@@ -386,14 +398,14 @@
 			dependencies = (
 				627E3719274E20D8005B037F /* PBXTargetDependency */,
 			);
-			name = "9Tears-iOSTests";
+			name = "SW-9Tears-iOSTests";
 			productName = "9Tears-iOSTests";
-			productReference = 627E3717274E20D8005B037F /* 9Tears-iOSTests.xctest */;
+			productReference = 627E3717274E20D8005B037F /* SW-9Tears-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		627E3720274E20D8005B037F /* 9Tears-iOSUITests */ = {
+		627E3720274E20D8005B037F /* SW-9Tears-iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 627E3731274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOSUITests" */;
+			buildConfigurationList = 627E3731274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOSUITests" */;
 			buildPhases = (
 				ACB3BA71C540AF90F3298BD9 /* [CP] Check Pods Manifest.lock */,
 				627E371D274E20D8005B037F /* Sources */,
@@ -406,9 +418,9 @@
 			dependencies = (
 				627E3723274E20D8005B037F /* PBXTargetDependency */,
 			);
-			name = "9Tears-iOSUITests";
+			name = "SW-9Tears-iOSUITests";
 			productName = "9Tears-iOSUITests";
-			productReference = 627E3721274E20D8005B037F /* 9Tears-iOSUITests.xctest */;
+			productReference = 627E3721274E20D8005B037F /* SW-9Tears-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -434,7 +446,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 627E36FC274E20D5005B037F /* Build configuration list for PBXProject "9Tears-iOS" */;
+			buildConfigurationList = 627E36FC274E20D5005B037F /* Build configuration list for PBXProject "SW-9Tears-iOS" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -447,9 +459,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				627E3700274E20D5005B037F /* 9Tears-iOS */,
-				627E3716274E20D8005B037F /* 9Tears-iOSTests */,
-				627E3720274E20D8005B037F /* 9Tears-iOSUITests */,
+				627E3700274E20D5005B037F /* SW-9Tears-iOS */,
+				627E3716274E20D8005B037F /* SW-9Tears-iOSTests */,
+				627E3720274E20D8005B037F /* SW-9Tears-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -494,15 +506,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		58E20C2A0B0C6E0FD926F611 /* [CP] Check Pods Manifest.lock */ = {
@@ -520,7 +532,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-9Tears-iOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SW-9Tears-iOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,15 +545,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ACB3BA71C540AF90F3298BD9 /* [CP] Check Pods Manifest.lock */ = {
@@ -559,7 +571,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-9Tears-iOS-9Tears-iOSUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -581,7 +593,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-9Tears-iOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SW-9Tears-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -638,12 +650,12 @@
 /* Begin PBXTargetDependency section */
 		627E3719274E20D8005B037F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 627E3700274E20D5005B037F /* 9Tears-iOS */;
+			target = 627E3700274E20D5005B037F /* SW-9Tears-iOS */;
 			targetProxy = 627E3718274E20D8005B037F /* PBXContainerItemProxy */;
 		};
 		627E3723274E20D8005B037F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 627E3700274E20D5005B037F /* 9Tears-iOS */;
+			target = 627E3700274E20D5005B037F /* SW-9Tears-iOS */;
 			targetProxy = 627E3722274E20D8005B037F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -778,15 +790,16 @@
 		};
 		627E372C274E20D8005B037F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */;
+			baseConfigurationReference = E5FD236EBBDF71D39A57ED27 /* Pods-SW-9Tears-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "9Tears-iOS/SupportingFile/Info.plist";
+				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -796,7 +809,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-021.sw.hackathon.-Tears-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "sw.hackathon.SW-9Tears-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -806,15 +819,16 @@
 		};
 		627E372D274E20D8005B037F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCA816EBA856F39F18FD59B3 /* Pods-9Tears-iOS.release.xcconfig */;
+			baseConfigurationReference = 91EE0834EFAE0880373D1F18 /* Pods-SW-9Tears-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "9Tears-iOS/SupportingFile/Info.plist";
+				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -824,7 +838,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-021.sw.hackathon.-Tears-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "sw.hackathon.SW-9Tears-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -834,7 +848,7 @@
 		};
 		627E372F274E20D8005B037F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29F4170F6D4CB8852B41EE6E /* Pods-9Tears-iOSTests.debug.xcconfig */;
+			baseConfigurationReference = 034A696C30DCD8940E1F371A /* Pods-SW-9Tears-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -854,13 +868,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9Tears-iOS.app/9Tears-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SW-9Tears-iOS.app/SW-9Tears-iOS";
 			};
 			name = Debug;
 		};
 		627E3730274E20D8005B037F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB9D901B39E193791E48EF7B /* Pods-9Tears-iOSTests.release.xcconfig */;
+			baseConfigurationReference = E9C304E280AFA4C0E571AC03 /* Pods-SW-9Tears-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -880,13 +894,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9Tears-iOS.app/9Tears-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SW-9Tears-iOS.app/SW-9Tears-iOS";
 			};
 			name = Release;
 		};
 		627E3732274E20D8005B037F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 329105212BB4E5C837E07AD7 /* Pods-9Tears-iOS-9Tears-iOSUITests.debug.xcconfig */;
+			baseConfigurationReference = DC4F34CB85CC44EA9C9180A0 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -910,7 +924,7 @@
 		};
 		627E3733274E20D8005B037F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CFA293C05842F8F4B59C4DF /* Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig */;
+			baseConfigurationReference = E12A6B47D8F776C2F38F85D1 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -935,7 +949,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		627E36FC274E20D5005B037F /* Build configuration list for PBXProject "9Tears-iOS" */ = {
+		627E36FC274E20D5005B037F /* Build configuration list for PBXProject "SW-9Tears-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				627E3729274E20D8005B037F /* Debug */,
@@ -944,7 +958,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		627E372B274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOS" */ = {
+		627E372B274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				627E372C274E20D8005B037F /* Debug */,
@@ -953,7 +967,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		627E372E274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOSTests" */ = {
+		627E372E274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				627E372F274E20D8005B037F /* Debug */,
@@ -962,7 +976,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		627E3731274E20D8005B037F /* Build configuration list for PBXNativeTarget "9Tears-iOSUITests" */ = {
+		627E3731274E20D8005B037F /* Build configuration list for PBXNativeTarget "SW-9Tears-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				627E3732274E20D8005B037F /* Debug */,

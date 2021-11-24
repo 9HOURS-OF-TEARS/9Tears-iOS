@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import _Tears_iOS
+@testable import SW_9Tears_iOS
 
 class _Tears_iOSTests: XCTestCase {
 
