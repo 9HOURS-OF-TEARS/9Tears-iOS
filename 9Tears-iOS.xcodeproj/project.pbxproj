@@ -15,6 +15,7 @@
 		627E371C274E20D8005B037F /* _Tears_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E371B274E20D8005B037F /* _Tears_iOSTests.swift */; };
 		627E3726274E20D8005B037F /* _Tears_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */; };
 		627E3728274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */; };
+		627E3738274E22F5005B037F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627E3737274E22F5005B037F /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		627E3721274E20D8005B037F /* 9Tears-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9Tears-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITests.swift; sourceTree = "<group>"; };
 		627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		627E3737274E22F5005B037F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,9 @@
 		627E3703274E20D5005B037F /* 9Tears-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				627E3704274E20D5005B037F /* AppDelegate.swift */,
-				627E3706274E20D5005B037F /* SceneDelegate.swift */,
-				627E3708274E20D5005B037F /* ViewController.swift */,
-				627E370D274E20D7005B037F /* Assets.xcassets */,
-				627E370F274E20D7005B037F /* LaunchScreen.storyboard */,
-				627E3712274E20D7005B037F /* Info.plist */,
+				627E3734274E22B1005B037F /* Source */,
+				627E3735274E22B9005B037F /* Resource */,
+				627E3736274E22C3005B037F /* SupportingFile */,
 			);
 			path = "9Tears-iOS";
 			sourceTree = "<group>";
@@ -122,6 +121,34 @@
 				627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */,
 			);
 			path = "9Tears-iOSUITests";
+			sourceTree = "<group>";
+		};
+		627E3734274E22B1005B037F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				627E3704274E20D5005B037F /* AppDelegate.swift */,
+				627E3706274E20D5005B037F /* SceneDelegate.swift */,
+				627E3708274E20D5005B037F /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		627E3735274E22B9005B037F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				627E370F274E20D7005B037F /* LaunchScreen.storyboard */,
+				627E370D274E20D7005B037F /* Assets.xcassets */,
+				627E3737274E22F5005B037F /* Colors.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		627E3736274E22C3005B037F /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				627E3712274E20D7005B037F /* Info.plist */,
+			);
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627E3738274E22F5005B037F /* Colors.xcassets in Resources */,
 				627E3711274E20D7005B037F /* LaunchScreen.storyboard in Resources */,
 				627E370E274E20D7005B037F /* Assets.xcassets in Resources */,
 			);
@@ -429,7 +457,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "9Tears-iOS/Info.plist";
+				INFOPLIST_FILE = "9Tears-iOS/SupportingFile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -456,7 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "9Tears-iOS/Info.plist";
+				INFOPLIST_FILE = "9Tears-iOS/SupportingFile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
