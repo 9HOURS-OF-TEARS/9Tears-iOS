@@ -33,6 +33,7 @@
 		627E3760274E5F99005B037F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E375F274E5F99005B037F /* Network.swift */; };
 		627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3761274E5FFF005B037F /* NetworkResult.swift */; };
 		627E3764274E6021005B037F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3763274E6021005B037F /* NetworkError.swift */; };
+		627E3768274E6403005B037F /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3767274E6403005B037F /* SnapKit.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		627E375F274E5F99005B037F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		627E3761274E5FFF005B037F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		627E3763274E6021005B037F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		627E3767274E6403005B037F /* SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 		627E3734274E22B1005B037F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				627E3765274E63E1005B037F /* Extension */,
 				627E3739274E237A005B037F /* Application */,
 				627E373D274E4B2D005B037F /* Flow */,
 				627E375E274E5F6E005B037F /* Network */,
@@ -278,6 +281,22 @@
 				627E3763274E6021005B037F /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		627E3765274E63E1005B037F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				627E3766274E63F5005B037F /* SnapKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		627E3766274E63F5005B037F /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				627E3767274E6403005B037F /* SnapKit.swift */,
+			);
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -554,6 +573,7 @@
 				627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
 				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
+				627E3768274E6403005B037F /* SnapKit.swift in Sources */,
 				627E3760274E5F99005B037F /* Network.swift in Sources */,
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
 				627E375A274E5A26005B037F /* SignInViewReactor.swift in Sources */,

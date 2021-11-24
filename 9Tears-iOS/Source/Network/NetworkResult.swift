@@ -16,4 +16,3 @@ enum NetworkResultWithValue<T: Codable> {
   case success(T)
   case error(NetworkError)
 }
-
