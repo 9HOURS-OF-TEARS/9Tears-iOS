@@ -16,6 +16,10 @@
 		627E3726274E20D8005B037F /* _Tears_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */; };
 		627E3728274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */; };
 		627E3738274E22F5005B037F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627E3737274E22F5005B037F /* Colors.xcassets */; };
+		627E373C274E4AAB005B037F /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E373B274E4AAA005B037F /* AppServices.swift */; };
+		627E373F274E4B64005B037F /* RankStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E373E274E4B64005B037F /* RankStep.swift */; };
+		627E3741274E4C96005B037F /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3740274E4C96005B037F /* AppFlow.swift */; };
+		627E3743274E4D24005B037F /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3742274E4D24005B037F /* AppStepper.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,10 @@
 		627E3725274E20D8005B037F /* _Tears_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITests.swift; sourceTree = "<group>"; };
 		627E3727274E20D8005B037F /* _Tears_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Tears_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		627E3737274E22F5005B037F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		627E373B274E4AAA005B037F /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		627E373E274E4B64005B037F /* RankStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankStep.swift; sourceTree = "<group>"; };
+		627E3740274E4C96005B037F /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		627E3742274E4D24005B037F /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				627E3739274E237A005B037F /* Application */,
+				627E373D274E4B2D005B037F /* Flow */,
 				627E373A274E238C005B037F /* ViewControllers */,
 			);
 			path = Source;
@@ -169,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				627E3704274E20D5005B037F /* AppDelegate.swift */,
+				627E373B274E4AAA005B037F /* AppServices.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -179,6 +189,16 @@
 				627E3708274E20D5005B037F /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		627E373D274E4B2D005B037F /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				627E373E274E4B64005B037F /* RankStep.swift */,
+				627E3740274E4C96005B037F /* AppFlow.swift */,
+				627E3742274E4D24005B037F /* AppStepper.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -443,8 +463,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627E373C274E4AAB005B037F /* AppServices.swift in Sources */,
+				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
 				627E3709274E20D5005B037F /* ViewController.swift in Sources */,
+				627E3741274E4C96005B037F /* AppFlow.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
+				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
