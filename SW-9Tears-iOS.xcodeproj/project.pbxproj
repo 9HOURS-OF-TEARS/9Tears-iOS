@@ -27,9 +27,6 @@
 		627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3761274E5FFF005B037F /* NetworkResult.swift */; };
 		627E3764274E6021005B037F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3763274E6021005B037F /* NetworkError.swift */; };
 		627E3768274E6403005B037F /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3767274E6403005B037F /* SnapKit.swift */; };
-		627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376B274E64B9005B037F /* UIViewPreview.swift */; };
-		627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376D274E64D6005B037F /* UIViewControllerPreview.swift */; };
-		627E3770274E6504005B037F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376F274E6504005B037F /* DeviceType.swift */; };
 		627E3773274E68B1005B037F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3772274E68B1005B037F /* Preview.swift */; };
 		627E377A274E7D2F005B037F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3774274E7D2D005B037F /* NotoSansKR-Medium.otf */; };
 		627E377B274E7D2F005B037F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3775274E7D2D005B037F /* NotoSansKR-Regular.otf */; };
@@ -90,9 +87,6 @@
 		627E3761274E5FFF005B037F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		627E3763274E6021005B037F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		627E3767274E6403005B037F /* SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
-		627E376B274E64B9005B037F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
-		627E376D274E64D6005B037F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
-		627E376F274E6504005B037F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		627E3772274E68B1005B037F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		627E3774274E7D2D005B037F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		627E3775274E7D2D005B037F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -200,7 +194,6 @@
 				627E373A274E238C005B037F /* ViewControllers */,
 				627E375B274E5A5C005B037F /* Base */,
 				627E3765274E63E1005B037F /* Extension */,
-				627E376A274E6498005B037F /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -316,24 +309,6 @@
 				627E3767274E6403005B037F /* SnapKit.swift */,
 			);
 			path = SnapKit;
-			sourceTree = "<group>";
-		};
-		627E376A274E6498005B037F /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				627E3771274E650E005B037F /* Preview */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		627E3771274E650E005B037F /* Preview */ = {
-			isa = PBXGroup;
-			children = (
-				627E376B274E64B9005B037F /* UIViewPreview.swift */,
-				627E376D274E64D6005B037F /* UIViewControllerPreview.swift */,
-				627E376F274E6504005B037F /* DeviceType.swift */,
-			);
-			path = Preview;
 			sourceTree = "<group>";
 		};
 		62EC2A85274E9631003EDC25 /* BlackHanSans */ = {
@@ -624,10 +599,7 @@
 				627E375D274E5AD5005B037F /* BaseViewController.swift in Sources */,
 				627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
-				627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */,
 				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
-				627E3770274E6504005B037F /* DeviceType.swift in Sources */,
-				627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */,
 				627E3768274E6403005B037F /* SnapKit.swift in Sources */,
 				627E3760274E5F99005B037F /* Network.swift in Sources */,
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
