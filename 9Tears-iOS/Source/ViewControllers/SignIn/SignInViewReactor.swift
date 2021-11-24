@@ -1,5 +1,5 @@
 //
-//  LoginViewReactor.swift
+//  SignInViewReactor.swift
 //  9Tears-iOS
 //
 //  Created by 김부성 on 2021/11/24.
@@ -11,7 +11,7 @@ import ReactorKit
 import RxRelay
 import RxFlow
 
-final class LoginViewReactor: Reactor, Stepper {
+final class SignInViewReactor: Reactor, Stepper {
     
     var steps: PublishRelay<Step> = PublishRelay<Step>()
     
