@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		22A2F8C0FC5438AB1704114E /* Pods_9Tears_iOS_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B860B02D0E9E996E224B84BD /* Pods_9Tears_iOS_9Tears_iOSUITests.framework */; };
 		627E3705274E20D5005B037F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3704274E20D5005B037F /* AppDelegate.swift */; };
-		627E3709274E20D5005B037F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3708274E20D5005B037F /* ViewController.swift */; };
 		627E370E274E20D7005B037F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627E370D274E20D7005B037F /* Assets.xcassets */; };
 		627E3711274E20D7005B037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627E370F274E20D7005B037F /* LaunchScreen.storyboard */; };
 		627E371C274E20D8005B037F /* _Tears_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E371B274E20D8005B037F /* _Tears_iOSTests.swift */; };
@@ -28,9 +27,16 @@
 		627E3753274E5781005B037F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E374B274E5771005B037F /* NotoSansKR-Medium.otf */; };
 		627E3754274E5783005B037F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E374F274E5771005B037F /* NotoSansKR-Regular.otf */; };
 		627E3755274E5786005B037F /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E374D274E5771005B037F /* NotoSansKR-Thin.otf */; };
-		627E3758274E5A02005B037F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3757274E5A02005B037F /* LoginViewController.swift */; };
-		627E375A274E5A26005B037F /* LoginViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3759274E5A26005B037F /* LoginViewReactor.swift */; };
+		627E3758274E5A02005B037F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3757274E5A02005B037F /* SignInViewController.swift */; };
+		627E375A274E5A26005B037F /* SignInViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3759274E5A26005B037F /* SignInViewReactor.swift */; };
 		627E375D274E5AD5005B037F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E375C274E5AD5005B037F /* BaseViewController.swift */; };
+		627E3760274E5F99005B037F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E375F274E5F99005B037F /* Network.swift */; };
+		627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3761274E5FFF005B037F /* NetworkResult.swift */; };
+		627E3764274E6021005B037F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3763274E6021005B037F /* NetworkError.swift */; };
+		627E3768274E6403005B037F /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3767274E6403005B037F /* SnapKit.swift */; };
+		627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376B274E64B9005B037F /* UIViewPreview.swift */; };
+		627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376D274E64D6005B037F /* UIViewControllerPreview.swift */; };
+		627E3770274E6504005B037F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376F274E6504005B037F /* DeviceType.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +64,6 @@
 		5CFA293C05842F8F4B59C4DF /* Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS-9Tears-iOSUITests/Pods-9Tears-iOS-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		627E3701274E20D5005B037F /* 9Tears-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9Tears-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627E3704274E20D5005B037F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		627E3708274E20D5005B037F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		627E370D274E20D7005B037F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627E3710274E20D7005B037F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		627E3712274E20D7005B037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,9 +85,16 @@
 		627E374D274E5771005B037F /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		627E374E274E5771005B037F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		627E374F274E5771005B037F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular.otf"; path = "../../../../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
-		627E3757274E5A02005B037F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		627E3759274E5A26005B037F /* LoginViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewReactor.swift; sourceTree = "<group>"; };
+		627E3757274E5A02005B037F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		627E3759274E5A26005B037F /* SignInViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewReactor.swift; sourceTree = "<group>"; };
 		627E375C274E5AD5005B037F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		627E375F274E5F99005B037F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		627E3761274E5FFF005B037F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		627E3763274E6021005B037F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		627E3767274E6403005B037F /* SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		627E376B274E64B9005B037F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		627E376D274E64D6005B037F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		627E376F274E6504005B037F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,8 +185,11 @@
 			children = (
 				627E3739274E237A005B037F /* Application */,
 				627E373D274E4B2D005B037F /* Flow */,
-				627E375B274E5A5C005B037F /* Base */,
+				627E375E274E5F6E005B037F /* Network */,
 				627E373A274E238C005B037F /* ViewControllers */,
+				627E375B274E5A5C005B037F /* Base */,
+				627E3765274E63E1005B037F /* Extension */,
+				627E376A274E6498005B037F /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -210,8 +225,7 @@
 		627E373A274E238C005B037F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				627E3756274E59DF005B037F /* Login */,
-				627E3708274E20D5005B037F /* ViewController.swift */,
+				627E3756274E59DF005B037F /* SignIn */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -249,13 +263,13 @@
 			path = NotoSansKR;
 			sourceTree = "<group>";
 		};
-		627E3756274E59DF005B037F /* Login */ = {
+		627E3756274E59DF005B037F /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				627E3757274E5A02005B037F /* LoginViewController.swift */,
-				627E3759274E5A26005B037F /* LoginViewReactor.swift */,
+				627E3757274E5A02005B037F /* SignInViewController.swift */,
+				627E3759274E5A26005B037F /* SignInViewReactor.swift */,
 			);
-			path = Login;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		627E375B274E5A5C005B037F /* Base */ = {
@@ -264,6 +278,50 @@
 				627E375C274E5AD5005B037F /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		627E375E274E5F6E005B037F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				627E375F274E5F99005B037F /* Network.swift */,
+				627E3761274E5FFF005B037F /* NetworkResult.swift */,
+				627E3763274E6021005B037F /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		627E3765274E63E1005B037F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				627E3766274E63F5005B037F /* SnapKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		627E3766274E63F5005B037F /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				627E3767274E6403005B037F /* SnapKit.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		627E376A274E6498005B037F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				627E3771274E650E005B037F /* Preview */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		627E3771274E650E005B037F /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				627E376B274E64B9005B037F /* UIViewPreview.swift */,
+				627E376D274E64D6005B037F /* UIViewControllerPreview.swift */,
+				627E376F274E6504005B037F /* DeviceType.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -534,15 +592,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627E3758274E5A02005B037F /* LoginViewController.swift in Sources */,
+				627E3758274E5A02005B037F /* SignInViewController.swift in Sources */,
 				627E373C274E4AAB005B037F /* AppServices.swift in Sources */,
 				627E375D274E5AD5005B037F /* BaseViewController.swift in Sources */,
+				627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
+				627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */,
 				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
+				627E3770274E6504005B037F /* DeviceType.swift in Sources */,
+				627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */,
+				627E3768274E6403005B037F /* SnapKit.swift in Sources */,
+				627E3760274E5F99005B037F /* Network.swift in Sources */,
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
-				627E375A274E5A26005B037F /* LoginViewReactor.swift in Sources */,
-				627E3709274E20D5005B037F /* ViewController.swift in Sources */,
+				627E375A274E5A26005B037F /* SignInViewReactor.swift in Sources */,
 				627E3741274E4C96005B037F /* AppFlow.swift in Sources */,
+				627E3764274E6021005B037F /* NetworkError.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignInViewController.swift
 //  9Tears-iOS
 //
 //  Created by 김부성 on 2021/11/24.
@@ -9,9 +9,9 @@ import UIKit
 
 import ReactorKit
 
-final class LoginViewController: BaseViewController, View {
+final class SignInViewController: BaseViewController, View {
     
-    typealias Reactor = LoginViewReactor
+    typealias Reactor = SignInViewReactor
     
     // MARK: - Constants
     fileprivate struct Metric {

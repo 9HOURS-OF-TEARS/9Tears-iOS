@@ -61,13 +61,12 @@ class SignFlow: Flow {
 extension SignFlow {
     
     private func navigateToSignIn() -> FlowContributors {
-//        let reactor = SplashViewReactor(authService: services.authService)
-//        let viewController = SplashViewController(reactor: reactor)
-//
-//        self.rootViewController.pushViewController(viewController, animated: false)
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
-        return .none
+        let reactor = SignInViewReactor()
+        let viewController = SignInViewController(reactor: reactor)
+
+        self.rootViewController.pushViewController(viewController, animated: false)
+
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
     }
     
     private func navigateToSignUp() -> FlowContributors {
