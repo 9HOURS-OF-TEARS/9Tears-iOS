@@ -37,6 +37,7 @@
 		627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376B274E64B9005B037F /* UIViewPreview.swift */; };
 		627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376D274E64D6005B037F /* UIViewControllerPreview.swift */; };
 		627E3770274E6504005B037F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376F274E6504005B037F /* DeviceType.swift */; };
+		627E3773274E68B1005B037F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3772274E68B1005B037F /* Preview.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		627E376B274E64B9005B037F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		627E376D274E64D6005B037F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		627E376F274E6504005B037F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		627E3772274E68B1005B037F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 				627E3734274E22B1005B037F /* Source */,
 				627E3735274E22B9005B037F /* Resource */,
 				627E3736274E22C3005B037F /* SupportingFile */,
+				627E3772274E68B1005B037F /* Preview.swift */,
 			);
 			path = "9Tears-iOS";
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				627E3741274E4C96005B037F /* AppFlow.swift in Sources */,
 				627E3764274E6021005B037F /* NetworkError.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
+				627E3773274E68B1005B037F /* Preview.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
