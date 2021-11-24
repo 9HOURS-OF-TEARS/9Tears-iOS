@@ -44,31 +44,31 @@ class AppFlow: Flow {
 
 extension AppFlow {
     
-//    private func navigateToSplash() -> FlowContributors {
-//        let splashFlow = SplashFlow(services)
-//
-//        Flows.use(splashFlow, when: .created) { [unowned self] root in
-//            self.window.rootViewController = root
-//
-//            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
-//
-//        }
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: splashFlow, withNextStepper: OneStepper(withSingleStep: RankStep.splashIsRequired)));
-//    }
-//
-//    private func navigateToLogin() -> FlowContributors {
-//        let loginFlow = LoginFlow(services)
-//
-//        Flows.use(loginFlow, when: .created) { [unowned self] root in
-//            self.window.rootViewController = root
-//
-//            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
-//        }
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: loginFlow, withNextStepper: OneStepper(withSingleStep: RankStep.signInIsRequired)))
-//    }
-//
+    private func navigateToIntro() -> FlowContributors {
+        let introFlow = SplashFlow(services)
+
+        Flows.use(introFlow, when: .created) { [unowned self] root in
+            self.window.rootViewController = root
+
+            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+
+        }
+
+        return .one(flowContributor: .contribute(withNextPresentable: introFlow, withNextStepper: OneStepper(withSingleStep: RankStep.splashIsRequired)));
+    }
+    
+    private func navigateToSignIn() -> FlowContributors {
+        let signFlow = SignFlow(services)
+
+        Flows.use(signFlow, when: .created) { [unowned self] root in
+            self.window.rootViewController = root
+
+            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+
+        }
+
+        return .one(flowContributor: .contribute(withNextPresentable: signFlow, withNextStepper: OneStepper(withSingleStep: RankStep.signInIsRequired)));
+    }
 //
 //    private func navigateToMain() -> FlowContributors {
 //        let homeFlow = HomeFlow(services)

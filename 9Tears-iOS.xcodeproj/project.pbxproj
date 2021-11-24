@@ -20,6 +20,8 @@
 		627E373F274E4B64005B037F /* RankStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E373E274E4B64005B037F /* RankStep.swift */; };
 		627E3741274E4C96005B037F /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3740274E4C96005B037F /* AppFlow.swift */; };
 		627E3743274E4D24005B037F /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3742274E4D24005B037F /* AppStepper.swift */; };
+		627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3744274E4F0D005B037F /* SplashFlow.swift */; };
+		627E3747274E54FF005B037F /* SignFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3746274E54FF005B037F /* SignFlow.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		627E373E274E4B64005B037F /* RankStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankStep.swift; sourceTree = "<group>"; };
 		627E3740274E4C96005B037F /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		627E3742274E4D24005B037F /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		627E3744274E4F0D005B037F /* SplashFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlow.swift; sourceTree = "<group>"; };
+		627E3746274E54FF005B037F /* SignFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignFlow.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +201,8 @@
 				627E373E274E4B64005B037F /* RankStep.swift */,
 				627E3740274E4C96005B037F /* AppFlow.swift */,
 				627E3742274E4D24005B037F /* AppStepper.swift */,
+				627E3744274E4F0D005B037F /* SplashFlow.swift */,
+				627E3746274E54FF005B037F /* SignFlow.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -465,6 +471,8 @@
 			files = (
 				627E373C274E4AAB005B037F /* AppServices.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
+				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
+				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
 				627E3709274E20D5005B037F /* ViewController.swift in Sources */,
 				627E3741274E4C96005B037F /* AppFlow.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
