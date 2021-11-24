@@ -34,6 +34,9 @@
 		627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3761274E5FFF005B037F /* NetworkResult.swift */; };
 		627E3764274E6021005B037F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3763274E6021005B037F /* NetworkError.swift */; };
 		627E3768274E6403005B037F /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E3767274E6403005B037F /* SnapKit.swift */; };
+		627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376B274E64B9005B037F /* UIViewPreview.swift */; };
+		627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376D274E64D6005B037F /* UIViewControllerPreview.swift */; };
+		627E3770274E6504005B037F /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E376F274E6504005B037F /* DeviceType.swift */; };
 		910BEB3F7AD0898F6F0F79B5 /* Pods_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */; };
 		98DFC6BDF52E1C6F235C71C2 /* Pods_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +92,9 @@
 		627E3761274E5FFF005B037F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		627E3763274E6021005B037F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		627E3767274E6403005B037F /* SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		627E376B274E64B9005B037F /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		627E376D274E64D6005B037F /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
+		627E376F274E6504005B037F /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		62C32B4D9F3449D83F9D8EE5 /* Pods_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A57837D075C3B28D00F642C6 /* Pods_9Tears_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_9Tears_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,12 +183,13 @@
 		627E3734274E22B1005B037F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				627E3765274E63E1005B037F /* Extension */,
 				627E3739274E237A005B037F /* Application */,
 				627E373D274E4B2D005B037F /* Flow */,
 				627E375E274E5F6E005B037F /* Network */,
 				627E373A274E238C005B037F /* ViewControllers */,
 				627E375B274E5A5C005B037F /* Base */,
+				627E3765274E63E1005B037F /* Extension */,
+				627E376A274E6498005B037F /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -297,6 +304,24 @@
 				627E3767274E6403005B037F /* SnapKit.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		627E376A274E6498005B037F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				627E3771274E650E005B037F /* Preview */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		627E3771274E650E005B037F /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				627E376B274E64B9005B037F /* UIViewPreview.swift */,
+				627E376D274E64D6005B037F /* UIViewControllerPreview.swift */,
+				627E376F274E6504005B037F /* DeviceType.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -572,7 +597,10 @@
 				627E375D274E5AD5005B037F /* BaseViewController.swift in Sources */,
 				627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
+				627E376C274E64B9005B037F /* UIViewPreview.swift in Sources */,
 				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
+				627E3770274E6504005B037F /* DeviceType.swift in Sources */,
+				627E376E274E64D6005B037F /* UIViewControllerPreview.swift in Sources */,
 				627E3768274E6403005B037F /* SnapKit.swift in Sources */,
 				627E3760274E5F99005B037F /* Network.swift in Sources */,
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
