@@ -16,6 +16,9 @@ final class SignInViewController: BaseViewController, View {
     // MARK: - Constants
     fileprivate struct Metric {
         static let imageSize = 62.f
+        static let viewSide = 60.f
+        
+        static let textFieldHeight = 40.f
     }
     
     fileprivate struct Font {
@@ -47,6 +50,17 @@ final class SignInViewController: BaseViewController, View {
         $0.image = UIImage(named: "logo")
     }
     
+    let emailTextField = RankTextField().then {
+        $0.textField.keyboardType = .emailAddress
+        $0.textField.placeholder = "이메일을 입력해주세요."
+    }
+    
+    let passwordTextField = RankTextField().then {
+        $0.textField.keyboardType = .default
+        $0.textField.placeholder = "비밀번호를 입력해주세요."
+        $0.textField.isSecureTextEntry = true
+    }
+
     // MARK: - Inintializing
     init(reactor: Reactor) {
         super.init()
@@ -65,12 +79,20 @@ final class SignInViewController: BaseViewController, View {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        self.view.endEditing(true)
+    }
+    
     override func setupLayout() {
         super.setupLayout()
         
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.image)
         self.view.addSubview(self.subtitleLabel)
+        self.view.addSubview(self.emailTextField)
+        self.view.addSubview(self.passwordTextField)
     }
     
     override func setupConstraints() {
@@ -90,6 +112,20 @@ final class SignInViewController: BaseViewController, View {
         self.subtitleLabel.snp.makeConstraints {
             $0.top.equalTo(self.image.snp.bottom)
             $0.left.equalTo(self.titleLabel)
+        }
+        
+        self.emailTextField.snp.makeConstraints {
+            $0.top.equalTo(self.subtitleLabel.snp.bottom).offset(80)
+            $0.left.equalToSuperview().offset(Metric.viewSide)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.height.equalTo(Metric.textFieldHeight)
+        }
+        
+        self.passwordTextField.snp.makeConstraints {
+            $0.top.equalTo(self.emailTextField.snp.bottom).offset(20)
+            $0.left.equalToSuperview().offset(Metric.viewSide)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.height.equalTo(Metric.textFieldHeight)
         }
     }
     
