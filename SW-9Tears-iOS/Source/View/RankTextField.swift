@@ -21,7 +21,7 @@ final class RankTextField: UIView {
         static let textFieldSide = 7.f
         
         // separator
-        static let separatorTop = 4.f
+        static let separatorTop = 0.f
         static let separatorHeight = 1.f
     }
     
