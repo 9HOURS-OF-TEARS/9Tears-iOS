@@ -1,0 +1,132 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Atributika (4.10.1)
+  - Carte (2.2.1)
+  - CGFloatLiteral (0.5.0)
+  - Differentiator (4.0.1)
+  - DropDown (2.3.13)
+  - KeychainAccess (4.2.2)
+  - Loaf (0.7.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Pageboy (3.6.2)
+  - ReactorKit (2.1.1):
+    - RxSwift (~> 5.0)
+    - WeakMapTable (~> 1.1)
+  - ReusableKit/Core (3.0.0)
+  - ReusableKit/RxSwift (3.0.0):
+    - ReusableKit/Core
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxAnimated (0.7.0):
+    - RxAnimated/Core (= 0.7.0)
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxAnimated/Core (0.7.0):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxFlow (2.11.0):
+    - RxCocoa (>= 5.1.1)
+    - RxSwift (>= 5.1.1)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - SnapKit (5.0.1)
+  - Tabman (2.11.1):
+    - Pageboy (~> 3.6.0)
+  - Then (2.7.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - Atributika
+  - Carte
+  - CGFloatLiteral
+  - DropDown
+  - KeychainAccess
+  - Loaf
+  - Moya/RxSwift
+  - ReactorKit
+  - ReusableKit/RxSwift
+  - RxAnimated
+  - RxCocoa
+  - RxDataSources
+  - RxFlow
+  - RxGesture
+  - RxSwift
+  - RxViewController
+  - SnapKit
+  - Tabman
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Atributika
+    - Carte
+    - CGFloatLiteral
+    - Differentiator
+    - DropDown
+    - KeychainAccess
+    - Loaf
+    - Moya
+    - Pageboy
+    - ReactorKit
+    - ReusableKit
+    - RxAnimated
+    - RxCocoa
+    - RxDataSources
+    - RxFlow
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - RxViewController
+    - SnapKit
+    - Tabman
+    - Then
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Atributika: 47e778507cfb3cd2c996278b0285221a62e97d71
+  Carte: 6bcff4eaa894ff5b979d646de833fec96e04a38c
+  CGFloatLiteral: 0328648f666e3cb2263d5ee3972df9d320786d25
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  ReactorKit: 6d894a20c3d508344320901cd8e386fde92df4b6
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  RxAnimated: 8540892468e906e7404595bc51ed4b36b3737ab5
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxFlow: c5242626a73a03d0a0163f0ab795538c467b791f
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 382267f54c429f4e9fc7c01a3cf05e7f127247e0
+
+COCOAPODS: 1.11.2
