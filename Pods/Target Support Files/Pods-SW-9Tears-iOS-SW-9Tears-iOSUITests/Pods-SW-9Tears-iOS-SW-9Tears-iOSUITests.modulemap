@@ -1,6 +1,0 @@
-framework module Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests {
-  umbrella header "Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
