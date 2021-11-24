@@ -19,6 +19,8 @@ final class SignInViewController: BaseViewController, View {
         static let viewSide = 60.f
         
         static let textFieldHeight = 40.f
+        
+        static let buttonHiehgt = 40.f
     }
     
     fileprivate struct Font {
@@ -60,6 +62,10 @@ final class SignInViewController: BaseViewController, View {
         $0.textField.placeholder = "비밀번호를 입력해주세요."
         $0.textField.isSecureTextEntry = true
     }
+    
+    let signInButton = RankButton().then {
+        $0.setTitle("Log in", for: .normal)
+    }
 
     // MARK: - Inintializing
     init(reactor: Reactor) {
@@ -93,6 +99,7 @@ final class SignInViewController: BaseViewController, View {
         self.view.addSubview(self.subtitleLabel)
         self.view.addSubview(self.emailTextField)
         self.view.addSubview(self.passwordTextField)
+        self.view.addSubview(self.signInButton)
     }
     
     override func setupConstraints() {
@@ -126,6 +133,13 @@ final class SignInViewController: BaseViewController, View {
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
+        }
+        
+        self.signInButton.snp.makeConstraints {
+            $0.top.equalTo(self.passwordTextField.snp.bottom).offset(30)
+            $0.left.equalToSuperview().offset(Metric.viewSide)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.height.equalTo(Metric.buttonHiehgt)
         }
     }
     
