@@ -15,6 +15,7 @@ target 'SW-9Tears-iOS' do
   pod 'DropDown'
   pod 'Tabman'
   pod 'IQKeyboardManagerSwift'
+  pod 'UITextView+Placeholder'
 
   # Architecture
   pod 'ReactorKit'
