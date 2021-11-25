@@ -124,7 +124,7 @@ extension PostViewController: PageboyViewControllerDataSource, TMBarDataSource {
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
         let viewControllers = [
-            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps)),
+            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps, rankService: self.rankService)),
             HotPostViewController(reactor: HotPostViewReactor(self.reactor?.steps, rankService: self.rankService))
         ]
 

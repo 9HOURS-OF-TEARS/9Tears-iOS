@@ -127,6 +127,20 @@ final class WriteViewController: BaseViewController, View {
     // MARK: - Configuring
     func bind(reactor: Reactor) {
         
+        self.titleTextField.rx.text.orEmpty.asObservable()
+            .map { Reactor.Action.updateTitle($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.contentTextView.rx.text.orEmpty.asObservable()
+            .map { Reactor.Action.updateContents($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.sendButton.rx.tap
+            .map { Reactor.Action.write }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 }
 
