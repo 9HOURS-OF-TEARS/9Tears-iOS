@@ -88,6 +88,11 @@ final class NewPostViewController: BaseViewController, View {
     
     // MARK: - Configuring
     func bind(reactor: Reactor) {
+        self.rx.viewDidAppear.asObservable()
+            .map { _ in Reactor.Action.refresh }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         // View
         self.tableView.rx.setDelegate(self)
             .disposed(by: disposeBag)

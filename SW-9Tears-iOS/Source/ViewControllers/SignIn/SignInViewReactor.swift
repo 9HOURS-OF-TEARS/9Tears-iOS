@@ -19,6 +19,7 @@ final class SignInViewReactor: Reactor, Stepper {
     
     enum Action {
         case signUp
+        case signIn
     }
     
     enum Mutation {
@@ -38,6 +39,9 @@ final class SignInViewReactor: Reactor, Stepper {
         case .signUp:
             self.steps.accept(RankStep.signUpIsRequired)
             return Observable.empty()
+            
+        case .signIn:
+            return  Observable.empty()
         }
     }
     
