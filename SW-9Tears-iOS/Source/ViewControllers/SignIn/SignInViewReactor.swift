@@ -18,7 +18,7 @@ final class SignInViewReactor: Reactor, Stepper {
     let initialState: State
     
     enum Action {
-        
+        case signUp
     }
     
     enum Mutation {
@@ -34,7 +34,11 @@ final class SignInViewReactor: Reactor, Stepper {
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
-        
+        switch action {
+        case .signUp:
+            self.steps.accept(RankStep.signUpIsRequired)
+            return Observable.empty()
+        }
     }
     
     func reduce(state: State, mutation: Mutation) -> State {

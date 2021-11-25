@@ -50,6 +50,7 @@ final class SplashViewController: BaseViewController, View {
     override func setupLayout() {
         super.setupLayout()
         
+        self.view.backgroundColor = .black
     }
     
     override func setupConstraints() {
