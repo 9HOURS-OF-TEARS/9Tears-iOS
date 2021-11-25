@@ -13,7 +13,7 @@ import RxFlow
 
 final class NewPostViewReactor: Reactor, Stepper {
     
-    var steps: PublishRelay<Step> = PublishRelay<Step>()
+    var steps: PublishRelay<Step>
     
     let initialState: State
     
@@ -35,7 +35,9 @@ final class NewPostViewReactor: Reactor, Stepper {
         }
     }
     
-    init() {
+    init(_ steps: PublishRelay<Step>?) {
+        self.steps = steps ?? PublishRelay<Step>()
+        
         self.initialState = State()
     }
     

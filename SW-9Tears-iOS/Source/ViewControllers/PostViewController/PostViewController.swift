@@ -5,18 +5,19 @@
 //  Created by 김부성 on 2021/11/25.
 //
 
-import Tabman
-import Pageboy
 import UIKit
 
-class PostViewController: TabmanViewController {
+import Tabman
+import Pageboy
+import ReactorKit
+
+class PostViewController: TabmanViewController, View {
+    var disposeBag: DisposeBag = DisposeBag()
+    
+    typealias Reactor = PostViewReactor
     
     // MARK: - Constants
     fileprivate struct TabBarItems {
-        static let viewControllers = [
-            NewPostViewController(reactor: NewPostViewReactor()),
-            UIViewController()
-        ]
         static let titles: Array<String> = ["최신 글", "인기 글"]
     }
     
@@ -55,6 +56,20 @@ class PostViewController: TabmanViewController {
         $0.layer.cornerRadius = Metric.buttonSize / 2
         $0.clipsToBounds = true
     }
+    
+    // MARK: - Inintializing
+    init(reactor: Reactor) {
+        super.init(coder: .init())!
+        
+        defer {
+            self.reactor = reactor
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -81,18 +96,28 @@ class PostViewController: TabmanViewController {
             $0.width.height.equalTo(Metric.buttonSize)
         }
     }
+    
+    // MARK: - Configuring
+    func bind(reactor: Reactor) {
+        
+    }
 }
 
 // MARK: - Extension
 extension PostViewController: PageboyViewControllerDataSource, TMBarDataSource {
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return TabBarItems.viewControllers.count
+        return 2
     }
 
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return TabBarItems.viewControllers[index]
+        let viewControllers = [
+            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps)),
+            UIViewController()
+        ]
+
+        return viewControllers[index]
     }
 
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
