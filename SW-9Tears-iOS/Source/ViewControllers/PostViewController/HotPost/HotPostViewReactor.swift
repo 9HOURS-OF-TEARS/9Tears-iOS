@@ -79,8 +79,8 @@ final class HotPostViewReactor: Reactor, Stepper {
         case let .refresh(posts, idx):
             state.postViewSectionItems.removeAll()
             
-            posts.forEach {
-                state.postViewSectionItems.append(.post(PostListCellReactor(idx: $0.id, stickerCount: $0.stickerCount, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
+            posts.enumerated().forEach {
+                state.postViewSectionItems.append(.post(PostListCellReactor(count: $0, idx: $1.id, stickerCount: $1.stickerCount, title: $1.title, writer: $1.nickname, date: $1.createdAt, comment: $1.commentCount, like: $1.likeCount, unlike: $1.dislikeCount)))
             }
             
             state.currentIdx = idx
