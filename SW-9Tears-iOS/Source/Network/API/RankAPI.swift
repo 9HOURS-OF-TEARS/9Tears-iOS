@@ -10,6 +10,7 @@ import Moya
 
 enum RankAPI {
     case getList(String, String)
+    case createPost(String, String)
 }
 
 extension RankAPI: BaseAPI2 {
@@ -17,6 +18,9 @@ extension RankAPI: BaseAPI2 {
     var path: String {
         switch self {
         case .getList:
+            return "/post"
+            
+        case .createPost:
             return "/post"
         }
     }
@@ -46,6 +50,12 @@ extension RankAPI: BaseAPI2 {
             return [
                 "criterion" : type,
                 "duration" : duration
+            ]
+            
+        case let .createPost(title, contents):
+            return [
+                "title" : title,
+                "contents" : contents
             ]
         }
     }
