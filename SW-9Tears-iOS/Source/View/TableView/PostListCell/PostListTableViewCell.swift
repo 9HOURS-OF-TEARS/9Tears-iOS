@@ -18,11 +18,12 @@ class PostListTableViewCell: UITableViewCell, View {
     private let stickerImageView = UIImageView().then {
         $0.contentMode = .scaleAspectFit
         $0.image = UIImage(named: "PostSticker")
+        $0.tintColor = UIColor.init(named: "OrangeColor")
     }
     
     private let stickerCountLabel = UILabel().then {
         $0.font = UIFont(name: "NotoSansKR-Regular", size: 11)
-        $0.textColor = .systemYellow
+        $0.textColor = UIColor.init(named: "OrangeColor")
     }
     
     private let titleLabel = UILabel().then {
