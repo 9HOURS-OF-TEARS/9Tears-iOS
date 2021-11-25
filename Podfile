@@ -16,6 +16,8 @@ target 'SW-9Tears-iOS' do
   pod 'Tabman'
   pod 'IQKeyboardManagerSwift'
   pod 'UITextView+Placeholder'
+  pod 'BetterSegmentedControl'
+
 
   # Architecture
   pod 'ReactorKit'
