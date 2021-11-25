@@ -17,7 +17,7 @@ final class NewPostViewController: BaseViewController, View {
     
     // MARK: - Constants
     fileprivate struct Metric {
-        
+        static let viewSide = 10.f
     }
     
     fileprivate struct Font {
@@ -82,7 +82,9 @@ final class NewPostViewController: BaseViewController, View {
         super.setupConstraints()
         
         self.tableView.snp.makeConstraints {
-            $0.edges.equalToSafeArea(self.view)
+            $0.top.bottom.equalToSafeArea(self.view)
+            $0.left.equalToSuperview().offset(Metric.viewSide)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
         }
     }
     

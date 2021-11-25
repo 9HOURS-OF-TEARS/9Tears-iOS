@@ -34,6 +34,7 @@ class PostViewController: TabmanViewController, View {
         $0.layout.transitionStyle = .snap
         $0.backgroundView.style = .clear
         $0.layout.contentMode = .fit
+        $0.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
         $0.indicator.tintColor = UIColor.init(named: "SecondColor")
         $0.buttons.customize {
             $0.tintColor = UIColor.init(named: "DisabledColor")

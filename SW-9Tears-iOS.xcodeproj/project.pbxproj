@@ -411,8 +411,7 @@
 		62EC2B29274F0E3E003EDC25 /* PostViewController */ = {
 			isa = PBXGroup;
 			children = (
-				62EC2B2F274F0F9C003EDC25 /* PostViewController.swift */,
-				62EC2B49274F4AFF003EDC25 /* PostViewReactor.swift */,
+				62EC2B4B274F52BF003EDC25 /* PostViewController */,
 				62EC2B2A274F0E4F003EDC25 /* NewPost */,
 			);
 			path = PostViewController;
@@ -468,6 +467,15 @@
 				62EC2B43274F3ACD003EDC25 /* PostViewSection.swift */,
 			);
 			path = Section;
+			sourceTree = "<group>";
+		};
+		62EC2B4B274F52BF003EDC25 /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62EC2B2F274F0F9C003EDC25 /* PostViewController.swift */,
+				62EC2B49274F4AFF003EDC25 /* PostViewReactor.swift */,
+			);
+			path = PostViewController;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
