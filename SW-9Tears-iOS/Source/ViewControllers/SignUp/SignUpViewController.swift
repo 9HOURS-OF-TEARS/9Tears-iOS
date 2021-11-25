@@ -57,9 +57,23 @@ final class SignUpViewController: BaseViewController, View {
         $0.textField.placeholder = "닉네임을 입력해주세요."
     }
     
-    let emailTextField = RankTextField().then {
+    let nicknameButton = UIButton(type: .system).then {
+        $0.backgroundColor = UIColor.init(named: "ThirdColor")
+        $0.setTitle("중복 확인", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.layer.cornerRadius = 5
+    }
+    
+    let idTextField = RankTextField().then {
         $0.textField.keyboardType = .emailAddress
         $0.textField.placeholder = "이메일을 입력해주세요."
+    }
+    
+    let idButton = UIButton(type: .system).then {
+        $0.backgroundColor = UIColor.init(named: "ThirdColor")
+        $0.setTitle("중복 확인", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.layer.cornerRadius = 5
     }
     
     let passwordTextField = RankTextField().then {
@@ -103,7 +117,9 @@ final class SignUpViewController: BaseViewController, View {
         self.view.addSubview(self.image)
         self.view.addSubview(self.subtitleLabel)
         self.view.addSubview(self.nicknameTextField)
-        self.view.addSubview(self.emailTextField)
+        self.view.addSubview(self.nicknameButton)
+        self.view.addSubview(self.idTextField)
+        self.view.addSubview(self.idButton)
         self.view.addSubview(self.passwordTextField)
         self.view.addSubview(self.signUpButton)
     }
@@ -130,19 +146,31 @@ final class SignUpViewController: BaseViewController, View {
         self.nicknameTextField.snp.makeConstraints {
             $0.top.equalTo(self.subtitleLabel.snp.bottom).offset(50)
             $0.left.equalToSuperview().offset(Metric.viewSide)
-            $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
         }
         
-        self.emailTextField.snp.makeConstraints {
+        self.nicknameButton.snp.makeConstraints {
+            $0.top.bottom.equalTo(self.nicknameTextField)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.left.equalTo(self.nicknameTextField.snp.right).offset(20)
+            $0.width.equalTo(70)
+        }
+        
+        self.idTextField.snp.makeConstraints {
             $0.top.equalTo(self.nicknameTextField.snp.bottom).offset(20)
             $0.left.equalToSuperview().offset(Metric.viewSide)
-            $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
+        }
+        
+        self.idButton.snp.makeConstraints {
+            $0.top.bottom.equalTo(self.idTextField)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.left.equalTo(self.idTextField.snp.right).offset(20)
+            $0.width.equalTo(70)
         }
         
         self.passwordTextField.snp.makeConstraints {
-            $0.top.equalTo(self.emailTextField.snp.bottom).offset(20)
+            $0.top.equalTo(self.idTextField.snp.bottom).offset(20)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
@@ -158,7 +186,35 @@ final class SignUpViewController: BaseViewController, View {
     
     // MARK: - Configuring
     func bind(reactor: Reactor) {
+        self.idButton.rx.tap
+            .map { Reactor.Action.checkId }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
+        self.nicknameButton.rx.tap
+            .map { Reactor.Action.checkNickname }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.signUpButton.rx.tap.asObservable()
+            .map { Reactor.Action.signUp }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.nicknameTextField.textField.rx.text.orEmpty.asObservable()
+            .map { Reactor.Action.updateNickname($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.idTextField.textField.rx.text.orEmpty.asObservable()
+            .map { Reactor.Action.updateId($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.passwordTextField.textField.rx.text.orEmpty.asObservable()
+            .map { Reactor.Action.updatePw($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 }
 

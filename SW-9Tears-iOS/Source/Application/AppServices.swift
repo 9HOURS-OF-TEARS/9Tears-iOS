@@ -12,8 +12,17 @@ import Then
 import CGFloatLiteral
 
 struct AppServices {
-
+    
+    let authService: AuthServiceType
+    
     init() {
+        let authNetwork = Network<AuthAPI>(plugins: [
+            RequestLoggingPlugin()
+        ])
+        let signNetwork = Network<SignAPI>(plugins: [
+            RequestLoggingPlugin()
+        ])
         
+        self.authService = AuthService(authNetwork: authNetwork, signNetwork: signNetwork)
     }
 }
