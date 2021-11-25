@@ -18,7 +18,7 @@ final class SplashViewReactor: Reactor, Stepper {
     let initialState: State
     
     enum Action {
-        
+        case setNextView
     }
     
     enum Mutation {
@@ -34,11 +34,17 @@ final class SplashViewReactor: Reactor, Stepper {
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
-        
+        switch action {
+        case .setNextView:
+            self.steps.accept(RankStep.signInIsRequired)
+            return Observable.empty()
+            
+//            self.steps.accept(RankStep.mainIsRequired)
+//            return Observable.empty()
+        }
     }
     
     func reduce(state: State, mutation: Mutation) -> State {
         
     }
 }
-
