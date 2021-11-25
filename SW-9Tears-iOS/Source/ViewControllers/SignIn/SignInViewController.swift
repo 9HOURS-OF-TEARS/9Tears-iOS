@@ -51,7 +51,7 @@ final class SignInViewController: BaseViewController, View {
         $0.image = UIImage(named: "logo")
     }
     
-    let emailTextField = RankTextField().then {
+    let idTextField = RankTextField().then {
         $0.textField.keyboardType = .emailAddress
         $0.textField.placeholder = "이메일을 입력해주세요."
     }
@@ -100,7 +100,7 @@ final class SignInViewController: BaseViewController, View {
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.image)
         self.view.addSubview(self.subtitleLabel)
-        self.view.addSubview(self.emailTextField)
+        self.view.addSubview(self.idTextField)
         self.view.addSubview(self.passwordTextField)
         self.view.addSubview(self.signInButton)
         self.view.addSubview(self.signUpButton)
@@ -125,7 +125,7 @@ final class SignInViewController: BaseViewController, View {
             $0.left.equalTo(self.titleLabel)
         }
         
-        self.emailTextField.snp.makeConstraints {
+        self.idTextField.snp.makeConstraints {
             $0.top.equalTo(self.subtitleLabel.snp.bottom).offset(80)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
@@ -133,7 +133,7 @@ final class SignInViewController: BaseViewController, View {
         }
         
         self.passwordTextField.snp.makeConstraints {
-            $0.top.equalTo(self.emailTextField.snp.bottom).offset(20)
+            $0.top.equalTo(self.idTextField.snp.bottom).offset(20)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
@@ -161,6 +161,18 @@ final class SignInViewController: BaseViewController, View {
         
         self.signUpButton.rx.tap
             .map { Reactor.Action.signUp }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.idTextField.textField.rx.text.orEmpty.asObservable()
+            .distinctUntilChanged()
+            .map { Reactor.Action.updateId($0) }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.passwordTextField.textField.rx.text.orEmpty.asObservable()
+            .distinctUntilChanged()
+            .map { Reactor.Action.updatePw($0) }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
     }

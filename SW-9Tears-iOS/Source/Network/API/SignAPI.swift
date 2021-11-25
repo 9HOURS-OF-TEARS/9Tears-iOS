@@ -12,12 +12,12 @@ enum SignAPI {
     case signIn(String, String)
 }
 
-extension SignAPI: BaseAPI1 {
+extension SignAPI: BaseAPI2 {
     
     var path: String {
         switch self {
         case .signIn:
-            return "/signin/"
+            return "/user/login/"
         }
     }
     

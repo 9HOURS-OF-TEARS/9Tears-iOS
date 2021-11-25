@@ -12,6 +12,7 @@ enum NetworkError: Int, Error {
     // ALL
     case unknown = 0
     case badRequest = 400
+    case unauthorized = 401
     case conflict = 409
     
     var message: String {
@@ -20,6 +21,8 @@ enum NetworkError: Int, Error {
             return NetworkErrorMsg.unknownMsg.rawValue
         case .badRequest:
             return NetworkErrorMsg.badRequestMsg.rawValue
+        case .unauthorized:
+            return NetworkErrorMsg.unauthorizedMsg.rawValue
         case .conflict:
             return NetworkErrorMsg.conflictMsg.rawValue
         }
@@ -29,5 +32,6 @@ enum NetworkError: Int, Error {
 enum NetworkErrorMsg: String {
     case unknownMsg = "서버와의 통신중 에러가 발생했습니다."
     case badRequestMsg = "잘못된 요청"
+    case unauthorizedMsg = "토큰이 없음"
     case conflictMsg = "값이 중복됨"
 }

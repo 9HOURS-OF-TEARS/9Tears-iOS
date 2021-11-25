@@ -61,7 +61,7 @@ class SignFlow: Flow {
 extension SignFlow {
     
     private func navigateToSignIn() -> FlowContributors {
-        let reactor = SignInViewReactor()
+        let reactor = SignInViewReactor(authService: services.authService)
         let viewController = SignInViewController(reactor: reactor)
 
         self.rootViewController.pushViewController(viewController, animated: true)
