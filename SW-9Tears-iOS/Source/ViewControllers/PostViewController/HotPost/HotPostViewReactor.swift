@@ -50,13 +50,13 @@ final class HotPostViewReactor: Reactor, Stepper {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case let .refresh(idx):
-            let list = ["daily", "monthly", "monthly", "yearly"]
+            let list = ["daily", "weekly", "monthly", "yearly"]
             
             return Observable.concat([
                 
                 Observable.just(Mutation.setLoading(true)),
                 
-                rankService.getPosts("popularity", list[self.currentState.currentIdx]).asObservable()
+                rankService.getPosts("popularity", list[idx]).asObservable()
                     .map { result in
                         switch result {
                         case let .success(posts):
