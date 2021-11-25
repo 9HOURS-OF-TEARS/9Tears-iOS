@@ -32,7 +32,8 @@ extension Network {
         return request(target)
             .map { result in
                 guard let error = NetworkError(rawValue: result.statusCode) else {
-                    return .success(try! result.map(T.self, using: decoder))
+                    let value = try? result.map(T.self, using: decoder)
+                    return value == nil ? .error(.unknown) : .success(value!)
                 }
                 return .error(error)
             }.catchErrorJustReturn(.error(.unknown))
