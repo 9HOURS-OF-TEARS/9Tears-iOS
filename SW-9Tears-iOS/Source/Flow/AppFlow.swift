@@ -32,7 +32,7 @@ class AppFlow: Flow {
             return navigateToSignIn()
             
         case .mainIsRequired:
-            return .none
+            return navigateToMain()
             
         default:
             return .none
@@ -69,16 +69,16 @@ extension AppFlow {
 
         return .one(flowContributor: .contribute(withNextPresentable: signFlow, withNextStepper: OneStepper(withSingleStep: RankStep.signInIsRequired)));
     }
-//
-//    private func navigateToMain() -> FlowContributors {
-//        let homeFlow = HomeFlow(services)
-//
-//        Flows.use(homeFlow, when: .created) { [unowned self] root in
-//            self.window.rootViewController = root
-//
-//            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
-//        }
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: RankStep.mainIsRequired)))
-//    }
+
+    private func navigateToMain() -> FlowContributors {
+        let homeFlow = HomeFlow(services)
+
+        Flows.use(homeFlow, when: .created) { [unowned self] root in
+            self.window.rootViewController = root
+
+            UIView.transition(with: self.window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        }
+
+        return .one(flowContributor: .contribute(withNextPresentable: homeFlow, withNextStepper: OneStepper(withSingleStep: RankStep.mainIsRequired)))
+    }
 }

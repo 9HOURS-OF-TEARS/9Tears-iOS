@@ -93,6 +93,10 @@ final class NewPostViewController: BaseViewController, View {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        reactor.state.map { $0.sections }
+            .bind(to: self.tableView.rx.items(dataSource: self.dataSource))
+            .disposed(by: disposeBag)
+        
         // View
         self.tableView.rx.setDelegate(self)
             .disposed(by: disposeBag)

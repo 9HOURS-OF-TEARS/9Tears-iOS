@@ -41,6 +41,7 @@ final class SignInViewReactor: Reactor, Stepper {
             return Observable.empty()
             
         case .signIn:
+            self.steps.accept(RankStep.mainIsRequired)
             return  Observable.empty()
         }
     }

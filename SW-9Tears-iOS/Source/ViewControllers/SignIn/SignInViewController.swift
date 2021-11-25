@@ -154,6 +154,11 @@ final class SignInViewController: BaseViewController, View {
     
     // MARK: - Configuring
     func bind(reactor: Reactor) {
+        self.signInButton.rx.tap
+            .map { Reactor.Action.signIn }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         self.signUpButton.rx.tap
             .map { Reactor.Action.signUp }
             .bind(to: reactor.action)

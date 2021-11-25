@@ -59,7 +59,7 @@ class PostViewController: TabmanViewController, View {
     
     // MARK: - Inintializing
     init(reactor: Reactor) {
-        super.init(coder: .init())!
+        super.init(nibName: nil, bundle: nil)
         
         defer {
             self.reactor = reactor
