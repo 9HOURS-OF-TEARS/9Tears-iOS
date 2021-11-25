@@ -70,7 +70,7 @@ extension SignFlow {
     }
     
     private func navigateToSignUp() -> FlowContributors {
-        let reactor = SignUpViewReactor()
+        let reactor = SignUpViewReactor(authService: services.authService)
         let viewController = SignUpViewController(reactor: reactor)
 
         self.rootViewController.pushViewController(viewController, animated: true)

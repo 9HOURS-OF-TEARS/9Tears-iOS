@@ -53,7 +53,7 @@ final class SignInViewController: BaseViewController, View {
     
     let idTextField = RankTextField().then {
         $0.textField.keyboardType = .emailAddress
-        $0.textField.placeholder = "이메일을 입력해주세요."
+        $0.textField.placeholder = "아이디를 입력해주세요."
     }
     
     let passwordTextField = RankTextField().then {
