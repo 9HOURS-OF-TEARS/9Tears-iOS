@@ -11,6 +11,7 @@ enum RankStep: Step {
     case dismiss
     case popViewController
     case popToRootViewController
+    case toastIsRequired(String)
     
     // MARK: - Intro
     case splashIsRequired

@@ -15,7 +15,6 @@ enum AuthAPI {
     
     // auth
     case signUp(String, String, String)
-    case signIn(String, String)
 }
 
 extension AuthAPI: BaseAPI1 {
@@ -27,9 +26,7 @@ extension AuthAPI: BaseAPI1 {
         case .nicknameCheck:
             return "/check/nickname"
         case .signUp:
-            return "/sign-up/"
-        case .signIn:
-            return "/auth/"
+            return "/sign-up"
         }
     }
     
@@ -66,11 +63,6 @@ extension AuthAPI: BaseAPI1 {
                 "id" : id,
                 "password" : pwd,
                 "nickname" : nickname
-            ]
-        case let .signIn(id, pwd):
-            return [
-                "id" : id,
-                "password" : pwd
             ]
         }
     }
