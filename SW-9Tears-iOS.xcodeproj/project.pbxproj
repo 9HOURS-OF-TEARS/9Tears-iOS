@@ -76,6 +76,9 @@
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
+		EF7350E3274FDF3B00FEBE27 /* PatchNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E2274FDF3B00FEBE27 /* PatchNickNameViewController.swift */; };
+		EF7350E7274FE4AF00FEBE27 /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E6274FE4AE00FEBE27 /* MyPostsViewController.swift */; };
+		EF7350EA274FE67300FEBE27 /* MyBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E9274FE67300FEBE27 /* MyBadgesViewController.swift */; };
 		EF9152EF274F2F9F0089770C /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152EE274F2F9F0089770C /* RankViewController.swift */; };
 		EF9152F2274F2FF80089770C /* RankPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F1274F2FF80089770C /* RankPostViewController.swift */; };
 		EF9152F4274F30000089770C /* RankCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F3274F30000089770C /* RankCommentViewController.swift */; };
@@ -188,6 +191,9 @@
 		E12A6B47D8F776C2F38F85D1 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E5FD236EBBDF71D39A57ED27 /* Pods-SW-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C304E280AFA4C0E571AC03 /* Pods-SW-9Tears-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOSTests/Pods-SW-9Tears-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF7350E2274FDF3B00FEBE27 /* PatchNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNickNameViewController.swift; sourceTree = "<group>"; };
+		EF7350E6274FE4AE00FEBE27 /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
+		EF7350E9274FE67300FEBE27 /* MyBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBadgesViewController.swift; sourceTree = "<group>"; };
 		EF9152EE274F2F9F0089770C /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		EF9152F1274F2FF80089770C /* RankPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankPostViewController.swift; sourceTree = "<group>"; };
 		EF9152F3274F30000089770C /* RankCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCommentViewController.swift; sourceTree = "<group>"; };
@@ -537,6 +543,9 @@
 		62EC2B4E274F5A91003EDC25 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				EF7350E8274FE62C00FEBE27 /* MyBadge */,
+				EF7350E5274FE4A000FEBE27 /* MyPosts */,
+				EF7350E1274FDF1600FEBE27 /* PatchNickName */,
 				62EC2B4F274F5BD8003EDC25 /* MyPageViewController.swift */,
 				62EC2B51274F5BE8003EDC25 /* MyPageViewReactor.swift */,
 			);
@@ -619,6 +628,30 @@
 				6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7350E1274FDF1600FEBE27 /* PatchNickName */ = {
+			isa = PBXGroup;
+			children = (
+				EF7350E2274FDF3B00FEBE27 /* PatchNickNameViewController.swift */,
+			);
+			path = PatchNickName;
+			sourceTree = "<group>";
+		};
+		EF7350E5274FE4A000FEBE27 /* MyPosts */ = {
+			isa = PBXGroup;
+			children = (
+				EF7350E6274FE4AE00FEBE27 /* MyPostsViewController.swift */,
+			);
+			path = MyPosts;
+			sourceTree = "<group>";
+		};
+		EF7350E8274FE62C00FEBE27 /* MyBadge */ = {
+			isa = PBXGroup;
+			children = (
+				EF7350E9274FE67300FEBE27 /* MyBadgesViewController.swift */,
+			);
+			path = MyBadge;
 			sourceTree = "<group>";
 		};
 		EF9152ED274F2F850089770C /* Rank */ = {
@@ -913,13 +946,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7350E7274FE4AF00FEBE27 /* MyPostsViewController.swift in Sources */,
 				62EC2B33274F2235003EDC25 /* WriteViewController.swift in Sources */,
 				62EC2B20274EF5E4003EDC25 /* SignUpViewController.swift in Sources */,
 				62EC2B48274F4A5D003EDC25 /* HomeFlow.swift in Sources */,
+				EF7350EA274FE67300FEBE27 /* MyBadgesViewController.swift in Sources */,
 				62EC2B3B274F2B84003EDC25 /* SplashViewReactor.swift in Sources */,
 				627E3758274E5A02005B037F /* SignInViewController.swift in Sources */,
 				627E373C274E4AAB005B037F /* AppServices.swift in Sources */,
 				62EC2B22274EF71D003EDC25 /* SignUpViewReactor.swift in Sources */,
+				EF7350E3274FDF3B00FEBE27 /* PatchNickNameViewController.swift in Sources */,
 				62EC2B41274F3897003EDC25 /* PostListCellReactor.swift in Sources */,
 				62EC2B6D274F9336003EDC25 /* BaseAPI2.swift in Sources */,
 				627E375D274E5AD5005B037F /* BaseViewController.swift in Sources */,
@@ -1144,7 +1180,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
@@ -1174,7 +1210,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
