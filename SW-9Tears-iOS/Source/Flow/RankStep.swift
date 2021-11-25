@@ -19,4 +19,6 @@ enum RankStep: Step {
     
     // MARK: - Main
     case mainIsRequired
+    case writeIsRequired
+    case rankIsRequired
 }

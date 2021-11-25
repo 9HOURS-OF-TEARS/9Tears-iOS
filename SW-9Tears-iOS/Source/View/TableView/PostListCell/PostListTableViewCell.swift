@@ -6,10 +6,14 @@
 //
 
 import UIKit
-import SnapKit
-import Then
 
-class PostListTableViewCell: UITableViewCell {
+import ReactorKit
+
+class PostListTableViewCell: UITableViewCell, View {
+    
+    var disposeBag: DisposeBag = DisposeBag.init()
+    
+    typealias Reactor = PostListCellReactor
     
     private let stickerImageView = UIImageView().then {
         $0.contentMode = .scaleAspectFit
@@ -144,6 +148,45 @@ class PostListTableViewCell: UITableViewCell {
         }
         
         
+    }
+    
+    // MARK: - Configuring
+    
+    func bind(reactor: Reactor) {
+        reactor.state.map { "\($0.stickerCount)" }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: stickerCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.title }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: titleLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.writer }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: writerLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.date.viewString }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: dateLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { "\($0.comment)" }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: commentCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { "\($0.like)" }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: likeCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { "\($0.unlike)" }.asObservable()
+            .distinctUntilChanged()
+            .bind(to: unlikeCountLabel.rx.text)
+            .disposed(by: disposeBag)
     }
 
 }

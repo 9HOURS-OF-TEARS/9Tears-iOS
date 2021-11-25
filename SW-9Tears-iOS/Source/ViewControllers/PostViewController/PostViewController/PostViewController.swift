@@ -5,18 +5,19 @@
 //  Created by 김부성 on 2021/11/25.
 //
 
-import Tabman
-import Pageboy
 import UIKit
 
-class PostViewController: TabmanViewController {
+import Tabman
+import Pageboy
+import ReactorKit
+
+class PostViewController: TabmanViewController, View {
+    var disposeBag: DisposeBag = DisposeBag()
+    
+    typealias Reactor = PostViewReactor
     
     // MARK: - Constants
     fileprivate struct TabBarItems {
-        static let viewControllers = [
-            NewPostViewController(reactor: NewPostViewReactor()),
-            UIViewController()
-        ]
         static let titles: Array<String> = ["최신 글", "인기 글"]
     }
     
@@ -33,6 +34,7 @@ class PostViewController: TabmanViewController {
         $0.layout.transitionStyle = .snap
         $0.backgroundView.style = .clear
         $0.layout.contentMode = .fit
+        $0.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
         $0.indicator.tintColor = UIColor.init(named: "SecondColor")
         $0.buttons.customize {
             $0.tintColor = UIColor.init(named: "DisabledColor")
@@ -55,6 +57,20 @@ class PostViewController: TabmanViewController {
         $0.layer.cornerRadius = Metric.buttonSize / 2
         $0.clipsToBounds = true
     }
+    
+    // MARK: - Inintializing
+    init(reactor: Reactor) {
+        super.init(nibName: nil, bundle: nil)
+        
+        defer {
+            self.reactor = reactor
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -81,18 +97,36 @@ class PostViewController: TabmanViewController {
             $0.width.height.equalTo(Metric.buttonSize)
         }
     }
+    
+    // MARK: - Configuring
+    func bind(reactor: Reactor) {
+        self.writeButton.rx.tap
+            .map { Reactor.Action.write }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        self.rankButton.rx.tap
+            .map { Reactor.Action.rank }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }
 
 // MARK: - Extension
 extension PostViewController: PageboyViewControllerDataSource, TMBarDataSource {
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return TabBarItems.viewControllers.count
+        return 2
     }
 
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return TabBarItems.viewControllers[index]
+        let viewControllers = [
+            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps)),
+            UIViewController()
+        ]
+
+        return viewControllers[index]
     }
 
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
