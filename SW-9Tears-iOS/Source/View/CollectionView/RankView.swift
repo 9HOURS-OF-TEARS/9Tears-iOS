@@ -35,7 +35,7 @@ class RankView: UIView {
         addSubview(collectionView)
         
         collectionView.snp.makeConstraints {
-            $0.height.equalTo(300)
+            $0.height.equalTo(400)
             $0.left.right.equalToSuperview()
             $0.centerY.equalToSuperview()
         }
