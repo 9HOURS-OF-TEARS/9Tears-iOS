@@ -26,11 +26,18 @@ final class PostListCellReactor: Reactor, Stepper {
     }
     
     struct State {
-        
+        var idx: Int
+        var stickerCount: Int
+        var title: String
+        var writer: String
+        var date: Date
+        var comment: Int
+        var like: Int
+        var unlike: Int
     }
     
-    init() {
-        self.initialState = State()
+    init(idx: Int, stickerCount: Int, title: String, writer: String, date: Date, comment: Int, like: Int, unlike: Int) {
+        self.initialState = State(idx: idx, stickerCount: stickerCount, title: title, writer: writer, date: date, comment: comment, like: like, unlike: unlike)
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
