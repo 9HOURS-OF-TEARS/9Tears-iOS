@@ -8,7 +8,6 @@
 import Foundation
 
 import RxFlow
-import Loaf
 
 class HomeFlow: Flow {
     
@@ -45,10 +44,6 @@ class HomeFlow: Flow {
             
         case .dismiss:
             self.rootViewController.dismiss(animated: true, completion: nil)
-            return .none
-            
-        case let .toastIsRequired(message):
-            Loaf(message, sender: self.rootViewController).show()
             return .none
             
         case .popViewController:

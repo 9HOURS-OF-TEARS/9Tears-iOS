@@ -11,7 +11,7 @@ target 'SW-9Tears-iOS' do
   pod 'SnapKit'
   pod 'Atributika'
   pod 'ReusableKit/RxSwift'
-  pod 'Loaf'
+  pod 'SwiftMessages'
   pod 'DropDown'
   pod 'Tabman'
   pod 'IQKeyboardManagerSwift'
