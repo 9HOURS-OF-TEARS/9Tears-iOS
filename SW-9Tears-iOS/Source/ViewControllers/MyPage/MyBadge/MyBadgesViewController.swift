@@ -72,6 +72,7 @@ class MyBadgesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSubViews()
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "AccentColor")!)
     }
     
     private func setUpSubViews() {

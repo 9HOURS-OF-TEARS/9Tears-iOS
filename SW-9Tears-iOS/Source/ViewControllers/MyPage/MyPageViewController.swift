@@ -127,6 +127,7 @@ final class MyPageViewController: BaseViewController, View {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "AccentColor")!)
     }
     
     override func setupLayout() {

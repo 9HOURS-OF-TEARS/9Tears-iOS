@@ -28,6 +28,7 @@ class RankViewController: TabmanViewController, View {
         super.viewDidLoad()
         self.dataSource = self
         addBar(bar, dataSource: self, at: .top)
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "RankColor")!)
     }
     
     let bar = TMBar.ButtonBar().then {
