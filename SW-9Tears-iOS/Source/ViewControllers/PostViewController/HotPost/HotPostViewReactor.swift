@@ -18,11 +18,11 @@ final class HotPostViewReactor: Reactor, Stepper {
     let initialState: State
     
     enum Action {
-        
+        case changeSegment(Int)
     }
     
     enum Mutation {
-        
+        case refresh(Int)
     }
     
     struct State {
@@ -35,11 +35,21 @@ final class HotPostViewReactor: Reactor, Stepper {
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
-        
+        switch action {
+        case let .changeSegment(idx):
+            return Observable.just(Mutation.refresh(idx))
+        }
     }
     
     func reduce(state: State, mutation: Mutation) -> State {
+        var state = state
         
+        switch mutation {
+        case let .refresh(idx):
+            break
+        }
+        
+        return state
     }
 }
 
