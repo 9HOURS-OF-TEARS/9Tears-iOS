@@ -25,3 +25,16 @@ class Network<API: TargetType>: MoyaProvider<API> {
             .filter(statusCodes: 200...500)
     }
 }
+
+extension Network {
+    func requestObject<T: ModelType>(_ target: API, type: T.Type) -> Single<NetworkResultWithValue<T>> {
+        let decoder = type.decoder
+        return request(target)
+            .map { result in
+                guard let error = NetworkError(rawValue: result.statusCode) else {
+                    return .success(try! result.map(T.self, using: decoder))
+                }
+                return .error(error)
+            }.catchErrorJustReturn(.error(.unknown))
+    }
+}
