@@ -15,6 +15,8 @@ class RankCommentViewController: BaseViewController, View {
     typealias Reactor = RankCommentViewReactor
     
     private lazy var rankView = RankView.init(frame: self.view.frame)
+    
+    let cell = RankCollectionViewCell()
         
     private func setupCollectionView() {
         rankView.collectionView.delegate = self
@@ -55,11 +57,13 @@ extension RankCommentViewController: UICollectionViewDelegate, UICollectionViewD
             return UICollectionViewCell()
         }
         
+        cell.stickerImageView.image = UIImage(named: "CommentSticker")
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 330, height: 300)
+        return CGSize.init(width: 300, height: 300)
     }
     
 }
