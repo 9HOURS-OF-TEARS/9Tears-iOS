@@ -68,6 +68,24 @@ class PostListTableViewCell: UITableViewCell, View {
         $0.textColor = .darkGray
     }
     
+    let goldCrown = UIImageView().then {
+        $0.image = UIImage(named: "GoldCrown")
+        $0.contentMode = .scaleAspectFit
+        $0.isHidden = true
+    }
+    
+    let silverCrown = UIImageView().then {
+        $0.image = UIImage(named: "SilverCrown")
+        $0.contentMode = .scaleAspectFit
+        $0.isHidden = true
+    }
+    
+    let bronzeCrown = UIImageView().then {
+        $0.image = UIImage(named: "BronzeCrown")
+        $0.contentMode = .scaleAspectFit
+        $0.isHidden = true
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUpSubViews()
@@ -85,13 +103,34 @@ class PostListTableViewCell: UITableViewCell, View {
     
     func setUpSubViews() {
         self.addSubview(contentView)
-        [stickerImageView, stickerCountLabel, titleLabel, writerLabel, dateLabel, commentImageView, commentCountLabel,
+        [stickerImageView, goldCrown, silverCrown, bronzeCrown, stickerCountLabel, titleLabel, writerLabel, dateLabel, commentImageView, commentCountLabel,
          likeImageView, likeCountLabel, unlikeImageView, unlikeCountLabel].forEach({ self.contentView.addSubview($0) })
         
         stickerImageView.snp.makeConstraints {
             $0.top.equalTo(10)
             $0.leading.equalTo(10)
             $0.width.height.equalTo(37)
+        }
+        
+        goldCrown.snp.makeConstraints {
+            $0.top.equalTo(2)
+            $0.leading.equalTo(15)
+            $0.width.equalTo(20)
+            $0.height.equalTo(15)
+        }
+        
+        silverCrown.snp.makeConstraints {
+            $0.top.equalTo(2)
+            $0.leading.equalTo(15)
+            $0.width.equalTo(20)
+            $0.height.equalTo(15)
+        }
+        
+        bronzeCrown.snp.makeConstraints {
+            $0.top.equalTo(2)
+            $0.leading.equalTo(15)
+            $0.width.equalTo(20)
+            $0.height.equalTo(15)
         }
         
         stickerCountLabel.snp.makeConstraints {
