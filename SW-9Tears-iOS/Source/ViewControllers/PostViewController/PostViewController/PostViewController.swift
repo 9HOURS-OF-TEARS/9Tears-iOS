@@ -123,7 +123,7 @@ extension PostViewController: PageboyViewControllerDataSource, TMBarDataSource {
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
         let viewControllers = [
             NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps)),
-            UIViewController()
+            HotPostViewController(reactor: HotPostViewReactor(self.reactor?.steps))
         ]
 
         return viewControllers[index]

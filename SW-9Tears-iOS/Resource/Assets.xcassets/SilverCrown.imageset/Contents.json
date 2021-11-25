@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "PostSticker.svg",
+      "filename" : "fa-solid_crown-4.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "fa-solid_crown-5.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "fa-solid_crown-6.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -17,8 +19,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "template"
   }
 }

@@ -15,17 +15,12 @@ class RankCommentViewController: BaseViewController, View {
     typealias Reactor = RankCommentViewReactor
     
     private lazy var rankView = RankView.init(frame: self.view.frame)
-    
-    static func instance() -> RankCommentViewController {
-        return RankCommentViewController.init(reactor: Reactor, nibName: nil, bundle: nil)
-    }
-    
+        
     private func setupCollectionView() {
         rankView.collectionView.delegate = self
         rankView.collectionView.dataSource = self
         rankView.collectionView.register(RankCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
     }
-    
     
     init(reactor: Reactor) {
         super.init()

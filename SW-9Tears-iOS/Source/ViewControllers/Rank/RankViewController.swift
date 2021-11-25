@@ -6,11 +6,15 @@
 //
 
 import UIKit
+
 import Tabman
 import Pageboy
-import Then
+import ReactorKit
 
-class RankViewController: TabmanViewController {
+class RankViewController: TabmanViewController, View {
+    var disposeBag: DisposeBag = DisposeBag()
+    
+    typealias Reactor = RankViewReactor
     
     fileprivate struct TabBarItems {
         static let viewControllers = [
@@ -38,6 +42,20 @@ class RankViewController: TabmanViewController {
             $0.font = UIFont(name: "NotoSansKR-Bold", size: 14)!
             $0.selectedTintColor = .black
         }
+    }
+    
+    init(reactor: Reactor) {
+        super.init(nibName: nil, bundle: nil)
+        
+        defer { self.reactor = reactor }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func bind(reactor: Reactor) {
+        
     }
 }
 
