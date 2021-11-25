@@ -51,6 +51,7 @@
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
+		EF049BA7274F089D0076B1DD /* PostListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF049BA6274F089D0076B1DD /* PostListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		E12A6B47D8F776C2F38F85D1 /* Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests/Pods-SW-9Tears-iOS-SW-9Tears-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E5FD236EBBDF71D39A57ED27 /* Pods-SW-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOS/Pods-SW-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C304E280AFA4C0E571AC03 /* Pods-SW-9Tears-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SW-9Tears-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-SW-9Tears-iOSTests/Pods-SW-9Tears-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF049BA6274F089D0076B1DD /* PostListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 		627E373A274E238C005B037F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF049BA2274F08080076B1DD /* Posts */,
 				62EC2B31274F2223003EDC25 /* Write */,
 				62EC2B29274F0E3E003EDC25 /* PostViewController */,
 				62EC2B1E274EF5D3003EDC25 /* SignUp */,
@@ -441,6 +444,22 @@
 				6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF049BA2274F08080076B1DD /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				EF049BA5274F08860076B1DD /* Cells */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		EF049BA5274F08860076B1DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF049BA6274F089D0076B1DD /* PostListTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -717,6 +736,7 @@
 				62EC2B15274EA368003EDC25 /* DeviceType.swift in Sources */,
 				627E3773274E68B1005B037F /* Preview.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
+				EF049BA7274F089D0076B1DD /* PostListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,7 +908,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
@@ -917,7 +937,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q23JLSJCCV;
+				DEVELOPMENT_TEAM = APN5U5HZ7G;
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SW-9Tears-iOS/SupportingFile/Info.plist";
