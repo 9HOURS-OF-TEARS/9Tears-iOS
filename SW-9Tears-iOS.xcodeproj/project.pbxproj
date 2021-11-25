@@ -48,6 +48,7 @@
 		62EC2B30274F0F9C003EDC25 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B2F274F0F9C003EDC25 /* PostViewController.swift */; };
 		62EC2B33274F2235003EDC25 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B32274F2235003EDC25 /* WriteViewController.swift */; };
 		62EC2B35274F224C003EDC25 /* WriteViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B34274F224C003EDC25 /* WriteViewReactor.swift */; };
+		62EC2B3B274F2B84003EDC25 /* SplashViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B3A274F2B84003EDC25 /* SplashViewReactor.swift */; };
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
@@ -121,6 +122,7 @@
 		62EC2B2F274F0F9C003EDC25 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		62EC2B32274F2235003EDC25 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		62EC2B34274F224C003EDC25 /* WriteViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewReactor.swift; sourceTree = "<group>"; };
+		62EC2B3A274F2B84003EDC25 /* SplashViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewReactor.swift; sourceTree = "<group>"; };
 		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +259,7 @@
 		627E373A274E238C005B037F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				62EC2B39274F2B76003EDC25 /* Splash */,
 				62EC2B31274F2223003EDC25 /* Write */,
 				62EC2B29274F0E3E003EDC25 /* PostViewController */,
 				62EC2B1E274EF5D3003EDC25 /* SignUp */,
@@ -412,6 +415,14 @@
 				62EC2B34274F224C003EDC25 /* WriteViewReactor.swift */,
 			);
 			path = Write;
+			sourceTree = "<group>";
+		};
+		62EC2B39274F2B76003EDC25 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				62EC2B3A274F2B84003EDC25 /* SplashViewReactor.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -691,6 +702,7 @@
 			files = (
 				62EC2B33274F2235003EDC25 /* WriteViewController.swift in Sources */,
 				62EC2B20274EF5E4003EDC25 /* SignUpViewController.swift in Sources */,
+				62EC2B3B274F2B84003EDC25 /* SplashViewReactor.swift in Sources */,
 				627E3758274E5A02005B037F /* SignInViewController.swift in Sources */,
 				627E373C274E4AAB005B037F /* AppServices.swift in Sources */,
 				62EC2B22274EF71D003EDC25 /* SignUpViewReactor.swift in Sources */,
