@@ -100,7 +100,15 @@ class PostViewController: TabmanViewController, View {
     
     // MARK: - Configuring
     func bind(reactor: Reactor) {
+        self.writeButton.rx.tap
+            .map { Reactor.Action.write }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
+        self.rankButton.rx.tap
+            .map { Reactor.Action.rank }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 }
 

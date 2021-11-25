@@ -18,7 +18,8 @@ final class PostViewReactor: Reactor, Stepper {
     let initialState: State
     
     enum Action {
-        
+        case write
+        case rank
     }
     
     enum Mutation {
@@ -34,7 +35,15 @@ final class PostViewReactor: Reactor, Stepper {
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
-        
+        switch action {
+        case .write:
+            self.steps.accept(RankStep.writeIsRequired)
+            return Observable.empty()
+            
+        case .rank:
+            self.steps.accept(RankStep.rankIsRequired)
+            return Observable.empty()
+        }
     }
     
     func reduce(state: State, mutation: Mutation) -> State {

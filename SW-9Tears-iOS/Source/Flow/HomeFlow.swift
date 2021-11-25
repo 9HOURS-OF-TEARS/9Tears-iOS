@@ -36,6 +36,9 @@ class HomeFlow: Flow {
         case .mainIsRequired:
             return navigateToMain()
             
+        case .writeIsRequired:
+            return navigateToWrite()
+            
         case .dismiss:
             self.rootViewController.dismiss(animated: true, completion: nil)
             return .none
@@ -57,6 +60,15 @@ extension HomeFlow {
     private func navigateToMain() -> FlowContributors {
         let reactor = PostViewReactor()
         let viewController = PostViewController(reactor: reactor)
+
+        self.rootViewController.pushViewController(viewController, animated: true)
+
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
+    }
+    
+    private func navigateToWrite() -> FlowContributors {
+        let reactor = WriteViewReactor()
+        let viewController = WriteViewController(reactor: reactor)
 
         self.rootViewController.pushViewController(viewController, animated: true)
 
