@@ -8,6 +8,7 @@
 import UIKit
 
 import ReactorKit
+import WMSegmentControl
 
 final class HotPostViewController: BaseViewController, View {
     
@@ -29,6 +30,15 @@ final class HotPostViewController: BaseViewController, View {
     // MARK: - Properties
     
     // MARK: - UI
+    let control = WMSegment(frame: .zero).then {
+        $0.type = .normal
+        $0.isRounded = true
+        $0.buttonTitles = "오늘,이번 주,이번 달,이번 해"
+        $0.textColor = .black
+        $0.selectorTextColor = .white
+        $0.selectorColor = UIColor.init(named: "SecondColor")!
+        
+    }
     
     // MARK: - Inintializing
     init(reactor: Reactor) {
@@ -50,11 +60,18 @@ final class HotPostViewController: BaseViewController, View {
     override func setupLayout() {
         super.setupLayout()
         
+        self.view.addSubview(self.control)
     }
     
     override func setupConstraints() {
         super.setupConstraints()
         
+        self.control.snp.makeConstraints {
+            $0.top.equalToSafeArea(self.view).offset(10)
+            $0.height.equalTo(30)
+            $0.left.equalToSuperview().offset(30)
+            $0.right.equalToSuperview().offset(-30)
+        }
     }
     
     // MARK: - Configuring
