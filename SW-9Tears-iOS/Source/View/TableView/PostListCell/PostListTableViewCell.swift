@@ -6,10 +6,14 @@
 //
 
 import UIKit
-import SnapKit
-import Then
 
-class PostListTableViewCell: UITableViewCell {
+import ReactorKit
+
+class PostListTableViewCell: UITableViewCell, View {
+    
+    var disposeBag: DisposeBag = DisposeBag.init()
+    
+    typealias Reactor = PostListCellReactor
     
     private let stickerImageView = UIImageView().then {
         $0.contentMode = .scaleAspectFit
@@ -143,6 +147,12 @@ class PostListTableViewCell: UITableViewCell {
             $0.trailing.equalTo(-20)
         }
         
+        
+    }
+    
+    // MARK: - Configuring
+    
+    func bind(reactor: Reactor) {
         
     }
 
