@@ -187,7 +187,6 @@ class PostListTableViewCell: UITableViewCell, View {
             $0.trailing.equalTo(-20)
         }
         
-        
     }
     
     // MARK: - Configuring
@@ -226,6 +225,25 @@ class PostListTableViewCell: UITableViewCell, View {
         reactor.state.map { "\($0.unlike)" }.asObservable()
             .distinctUntilChanged()
             .bind(to: unlikeCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.count }.asObservable()
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else { return }
+                self.goldCrown.isHidden = true
+                self.silverCrown.isHidden = true
+                self.bronzeCrown.isHidden = true
+                switch $0 {
+                case 0:
+                    self.goldCrown.isHidden = false
+                case 1:
+                    self.silverCrown.isHidden = false
+                case 2:
+                    self.bronzeCrown.isHidden = false
+                default:
+                    break
+                }
+            })
             .disposed(by: disposeBag)
     }
 

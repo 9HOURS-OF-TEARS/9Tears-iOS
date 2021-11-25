@@ -26,6 +26,7 @@ final class PostListCellReactor: Reactor, Stepper {
     }
     
     struct State {
+        var count: Int
         var idx: Int
         var stickerCount: Int
         var title: String
@@ -36,8 +37,8 @@ final class PostListCellReactor: Reactor, Stepper {
         var unlike: Int
     }
     
-    init(idx: Int, stickerCount: Int, title: String, writer: String, date: Date, comment: Int, like: Int, unlike: Int) {
-        self.initialState = State(idx: idx, stickerCount: stickerCount, title: title, writer: writer, date: date, comment: comment, like: like, unlike: unlike)
+    init(count: Int, idx: Int, stickerCount: Int, title: String, writer: String, date: Date, comment: Int, like: Int, unlike: Int) {
+        self.initialState = State(count: count, idx: idx, stickerCount: stickerCount, title: title, writer: writer, date: date, comment: comment, like: like, unlike: unlike)
     }
     
     func mutate(action: Action) -> Observable<Mutation> {

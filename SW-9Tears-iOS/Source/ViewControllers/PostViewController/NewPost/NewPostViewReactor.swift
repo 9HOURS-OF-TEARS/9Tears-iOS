@@ -78,7 +78,7 @@ final class NewPostViewReactor: Reactor, Stepper {
             state.postViewSectionItems.removeAll()
             
             posts.forEach {
-                state.postViewSectionItems.append(.post(PostListCellReactor(idx: $0.id, stickerCount: $0.stickerCount, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
+                state.postViewSectionItems.append(.post(PostListCellReactor(count: 3, idx: $0.id, stickerCount: $0.stickerCount, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
             }
             
         case let .setLoading(isLoading):
