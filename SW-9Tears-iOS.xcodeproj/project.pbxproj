@@ -263,8 +263,7 @@
 		627E373A274E238C005B037F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-        62EC2B39274F2B76003EDC25 /* Splash */,
-				EF049BA2274F08080076B1DD /* Posts */,
+				62EC2B39274F2B76003EDC25 /* Splash */,
 				62EC2B31274F2223003EDC25 /* Write */,
 				62EC2B29274F0E3E003EDC25 /* PostViewController */,
 				62EC2B1E274EF5D3003EDC25 /* SignUp */,
@@ -380,6 +379,7 @@
 		62EC2B17274EA641003EDC25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62EC2B3E274F37AE003EDC25 /* TableView */,
 				62EC2B18274EA65A003EDC25 /* RankTextField.swift */,
 				62EC2B1C274EAB63003EDC25 /* RankButton.swift */,
 			);
@@ -431,6 +431,22 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		62EC2B3E274F37AE003EDC25 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				62EC2B3F274F37C0003EDC25 /* PostListCell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		62EC2B3F274F37C0003EDC25 /* PostListCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF049BA6274F089D0076B1DD /* PostListTableViewCell.swift */,
+			);
+			path = PostListCell;
+			sourceTree = "<group>";
+		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,22 +474,6 @@
 				6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF049BA2274F08080076B1DD /* Posts */ = {
-			isa = PBXGroup;
-			children = (
-				EF049BA5274F08860076B1DD /* Cells */,
-			);
-			path = Posts;
-			sourceTree = "<group>";
-		};
-		EF049BA5274F08860076B1DD /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				EF049BA6274F089D0076B1DD /* PostListTableViewCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
