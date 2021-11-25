@@ -8,6 +8,7 @@
 import UIKit
 import Tabman
 import Pageboy
+import Then
 
 class RankViewController: TabmanViewController {
     
@@ -21,8 +22,22 @@ class RankViewController: TabmanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.dataSource = self
+        addBar(bar, dataSource: self, at: .top)
+    }
+    
+    let bar = TMBar.ButtonBar().then {
+        $0.layout.transitionStyle = .snap
+        $0.backgroundView.style = .clear
+        $0.layout.contentMode = .fit
+        $0.indicator.overscrollBehavior = .bounce
+        $0.indicator.tintColor = UIColor(named: "FourthMainColor")
+        $0.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
+        $0.buttons.customize {
+            $0.tintColor = UIColor(named: "DisabledColor")
+            $0.font = UIFont(name: "NotoSansKR-Bold", size: 14)!
+            $0.selectedTintColor = .black
+        }
     }
 }
 
