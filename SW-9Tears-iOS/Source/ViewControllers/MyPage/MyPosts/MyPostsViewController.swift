@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 
 class MyPostsViewController: UIViewController {
     
@@ -16,8 +18,12 @@ class MyPostsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints {
+            $0.top.equalTo(21)
+            $0.centerX.equalToSuperview()
+        }
     }
     
 
