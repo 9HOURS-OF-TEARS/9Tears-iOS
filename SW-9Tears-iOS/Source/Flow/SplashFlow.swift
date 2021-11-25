@@ -62,13 +62,12 @@ class SplashFlow: Flow {
 extension SplashFlow {
     
     private func navigateToSplash() -> FlowContributors {
-//        let reactor = SplashViewReactor(authService: services.authService)
-//        let viewController = SplashViewController(reactor: reactor)
-//
-//        self.rootViewController.pushViewController(viewController, animated: false)
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
-        return .none
+        let reactor = SplashViewReactor()
+        let viewController = SplashViewController(reactor: reactor)
+
+        self.rootViewController.pushViewController(viewController, animated: false)
+
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
     }
     
 }

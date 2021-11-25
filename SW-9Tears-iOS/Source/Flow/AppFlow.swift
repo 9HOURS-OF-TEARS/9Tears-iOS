@@ -26,10 +26,10 @@ class AppFlow: Flow {
         
         switch step {
         case .splashIsRequired:
-            return .none
+            return navigateToIntro()
             
         case .signInIsRequired:
-            return .none
+            return navigateToSignIn()
             
         case .mainIsRequired:
             return .none

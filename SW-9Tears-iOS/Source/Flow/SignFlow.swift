@@ -64,19 +64,18 @@ extension SignFlow {
         let reactor = SignInViewReactor()
         let viewController = SignInViewController(reactor: reactor)
 
-        self.rootViewController.pushViewController(viewController, animated: false)
+        self.rootViewController.pushViewController(viewController, animated: true)
 
         return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
     }
     
     private func navigateToSignUp() -> FlowContributors {
-//        let reactor = SplashViewReactor(authService: services.authService)
-//        let viewController = SplashViewController(reactor: reactor)
-//
-//        self.rootViewController.pushViewController(viewController, animated: false)
-//
-//        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
-        return .none
+        let reactor = SignUpViewReactor()
+        let viewController = SignUpViewController(reactor: reactor)
+
+        self.rootViewController.pushViewController(viewController, animated: true)
+
+        return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: reactor))
     }
     
 }

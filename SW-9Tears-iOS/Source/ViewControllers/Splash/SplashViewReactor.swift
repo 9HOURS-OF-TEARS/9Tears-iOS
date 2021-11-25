@@ -1,8 +1,8 @@
 //
-//  SignInViewReactor.swift
-//  9Tears-iOS
+//  SplashViewReactor.swift
+//  SW-9Tears-iOS
 //
-//  Created by 김부성 on 2021/11/24.
+//  Created by 김부성 on 2021/11/25.
 //
 
 import Foundation
@@ -11,14 +11,14 @@ import ReactorKit
 import RxRelay
 import RxFlow
 
-final class SignInViewReactor: Reactor, Stepper {
+final class SplashViewReactor: Reactor, Stepper {
     
     var steps: PublishRelay<Step> = PublishRelay<Step>()
     
     let initialState: State
     
     enum Action {
-        case signUp
+        case setNextView
     }
     
     enum Mutation {
@@ -35,9 +35,12 @@ final class SignInViewReactor: Reactor, Stepper {
     
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case .signUp:
-            self.steps.accept(RankStep.signUpIsRequired)
+        case .setNextView:
+            self.steps.accept(RankStep.signInIsRequired)
             return Observable.empty()
+            
+//            self.steps.accept(RankStep.mainIsRequired)
+//            return Observable.empty()
         }
     }
     
@@ -45,5 +48,3 @@ final class SignInViewReactor: Reactor, Stepper {
         
     }
 }
-
-
