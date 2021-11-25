@@ -118,6 +118,7 @@ final class HotPostViewController: BaseViewController, View {
         // segment
         self.control.onValueChanged = { [weak self] index in
             guard let self = self else { return }
+            print(index)
             _ = Observable.just(Reactor.Action.refresh(index))
                 .bind(to: reactor.action)
                 .disposed(by: self.disposeBag)

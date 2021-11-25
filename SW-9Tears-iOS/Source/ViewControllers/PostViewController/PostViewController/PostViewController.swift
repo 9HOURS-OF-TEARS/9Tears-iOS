@@ -58,8 +58,10 @@ class PostViewController: TabmanViewController, View {
         $0.clipsToBounds = true
     }
     
+    fileprivate let rankService: RankServiceType
     // MARK: - Inintializing
-    init(reactor: Reactor) {
+    init(reactor: Reactor, rankService: RankServiceType) {
+        self.rankService = rankService
         super.init(nibName: nil, bundle: nil)
         
         defer {
@@ -122,8 +124,8 @@ extension PostViewController: PageboyViewControllerDataSource, TMBarDataSource {
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
         let viewControllers = [
-            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps)),
-            HotPostViewController(reactor: HotPostViewReactor(self.reactor?.steps))
+            NewPostViewController(reactor: NewPostViewReactor(self.reactor?.steps, rankService: self.rankService)),
+            HotPostViewController(reactor: HotPostViewReactor(self.reactor?.steps, rankService: self.rankService))
         ]
 
         return viewControllers[index]

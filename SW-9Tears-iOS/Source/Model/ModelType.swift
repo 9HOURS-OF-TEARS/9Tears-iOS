@@ -13,9 +13,7 @@ protocol ModelType: Codable ,Then {
 
 extension ModelType {
     static var dateDecodingStrategy: JSONDecoder.DateDecodingStrategy {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return .formatted(formatter)
+        return .iso8601
     }
     
     static var decoder: JSONDecoder {

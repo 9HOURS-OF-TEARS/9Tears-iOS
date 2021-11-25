@@ -34,6 +34,7 @@
 		627E377D274E7D2F005B037F /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3777274E7D2E005B037F /* NotoSansKR-Black.otf */; };
 		627E377E274E7D2F005B037F /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3778274E7D2F005B037F /* NotoSansKR-Light.otf */; };
 		627E377F274E7D2F005B037F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 627E3779274E7D2F005B037F /* NotoSansKR-Bold.otf */; };
+		62A48BF3274FD377001016F1 /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A48BF2274FD377001016F1 /* AuthPlugin.swift */; };
 		62EC2A87274E9652003EDC25 /* BlackHanSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62EC2A86274E9652003EDC25 /* BlackHanSans-Regular.ttf */; };
 		62EC2B11274EA321003EDC25 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B10274EA321003EDC25 /* UIViewPreview.swift */; };
 		62EC2B13274EA354003EDC25 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B12274EA354003EDC25 /* UIViewControllerPreview.swift */; };
@@ -69,6 +70,9 @@
 		62EC2B69274F8C88003EDC25 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B68274F8C88003EDC25 /* AccessToken.swift */; };
 		62EC2B6B274F9323003EDC25 /* SignAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B6A274F9323003EDC25 /* SignAPI.swift */; };
 		62EC2B6D274F9336003EDC25 /* BaseAPI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B6C274F9336003EDC25 /* BaseAPI2.swift */; };
+		62EC2B6F274FC2C5003EDC25 /* RankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B6E274FC2C4003EDC25 /* RankService.swift */; };
+		62EC2B71274FC2D9003EDC25 /* RankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B70274FC2D9003EDC25 /* RankAPI.swift */; };
+		62EC2B73274FCC81003EDC25 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B72274FCC81003EDC25 /* post.swift */; };
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
@@ -135,6 +139,7 @@
 		627E3777274E7D2E005B037F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		627E3778274E7D2F005B037F /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		627E3779274E7D2F005B037F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		62A48BF2274FD377001016F1 /* AuthPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
 		62EC2A86274E9652003EDC25 /* BlackHanSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BlackHanSans-Regular.ttf"; sourceTree = "<group>"; };
 		62EC2B10274EA321003EDC25 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		62EC2B12274EA354003EDC25 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 		62EC2B68274F8C88003EDC25 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		62EC2B6A274F9323003EDC25 /* SignAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAPI.swift; sourceTree = "<group>"; };
 		62EC2B6C274F9336003EDC25 /* BaseAPI2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI2.swift; sourceTree = "<group>"; };
+		62EC2B6E274FC2C4003EDC25 /* RankService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankService.swift; sourceTree = "<group>"; };
+		62EC2B70274FC2D9003EDC25 /* RankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankAPI.swift; sourceTree = "<group>"; };
+		62EC2B72274FCC81003EDC25 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,6 +557,7 @@
 			children = (
 				62EC2B5B274F7DEE003EDC25 /* ModelType.swift */,
 				62EC2B68274F8C88003EDC25 /* AccessToken.swift */,
+				62EC2B72274FCC81003EDC25 /* post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -560,6 +569,7 @@
 				62EC2B6C274F9336003EDC25 /* BaseAPI2.swift */,
 				62EC2B60274F8382003EDC25 /* AuthAPI.swift */,
 				62EC2B6A274F9323003EDC25 /* SignAPI.swift */,
+				62EC2B70274FC2D9003EDC25 /* RankAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -568,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */,
+				62A48BF2274FD377001016F1 /* AuthPlugin.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -576,6 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				62EC2B66274F88D3003EDC25 /* AuthService.swift */,
+				62EC2B6E274FC2C4003EDC25 /* RankService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -945,6 +957,8 @@
 				EF9152EF274F2F9F0089770C /* RankViewController.swift in Sources */,
 				62EC2B57274F64A3003EDC25 /* HotPostViewReactor.swift in Sources */,
 				62EC2B11274EA321003EDC25 /* UIViewPreview.swift in Sources */,
+				62A48BF3274FD377001016F1 /* AuthPlugin.swift in Sources */,
+				62EC2B71274FC2D9003EDC25 /* RankAPI.swift in Sources */,
 				62EC2B5C274F7DEE003EDC25 /* ModelType.swift in Sources */,
 				627E375A274E5A26005B037F /* SignInViewReactor.swift in Sources */,
 				EF9152F4274F30000089770C /* RankCommentViewController.swift in Sources */,
@@ -955,6 +969,8 @@
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
 				62EC2B64274F8876003EDC25 /* RequestLogginPlugin.swift in Sources */,
 				62EC2B15274EA368003EDC25 /* DeviceType.swift in Sources */,
+				62EC2B73274FCC81003EDC25 /* post.swift in Sources */,
+				62EC2B6F274FC2C5003EDC25 /* RankService.swift in Sources */,
 				627E3773274E68B1005B037F /* Preview.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
 			);

@@ -72,6 +72,7 @@ final class AuthService: AuthServiceType {
     }
     
     fileprivate func getToken() -> String? {
+        print("get token")
         return try? keychain.getString("token")
     }
     

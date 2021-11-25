@@ -62,7 +62,7 @@ extension HomeFlow {
     
     private func navigateToMain() -> FlowContributors {
         let reactor = PostViewReactor()
-        let viewController = PostViewController(reactor: reactor)
+        let viewController = PostViewController(reactor: reactor, rankService: services.rankService)
 
         self.rootViewController.pushViewController(viewController, animated: true)
 
@@ -70,7 +70,7 @@ extension HomeFlow {
     }
     
     private func navigateToWrite() -> FlowContributors {
-        let reactor = WriteViewReactor()
+        let reactor = WriteViewReactor(rankService: services.rankService)
         let viewController = WriteViewController(reactor: reactor)
 
         self.rootViewController.pushViewController(viewController, animated: true)

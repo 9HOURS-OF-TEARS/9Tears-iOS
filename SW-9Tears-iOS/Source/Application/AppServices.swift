@@ -14,6 +14,7 @@ import CGFloatLiteral
 struct AppServices {
     
     let authService: AuthServiceType
+    let rankService: RankServiceType
     
     init() {
         let authNetwork = Network<AuthAPI>(plugins: [
@@ -24,5 +25,12 @@ struct AppServices {
         ])
         
         self.authService = AuthService(authNetwork: authNetwork, signNetwork: signNetwork)
+        
+        let rankNetwork = Network<RankAPI>(plugins: [
+            RequestLoggingPlugin(),
+            AuthPlugin(authService: self.authService)
+        ])
+        
+        self.rankService = RankService(network: rankNetwork)
     }
 }

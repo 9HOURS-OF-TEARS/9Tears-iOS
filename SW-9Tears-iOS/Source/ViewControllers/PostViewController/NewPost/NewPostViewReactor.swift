@@ -22,7 +22,8 @@ final class NewPostViewReactor: Reactor, Stepper {
     }
     
     enum Mutation {
-        case refresh
+        case refresh([Post])
+        case setLoading(Bool)
     }
     
     struct State {
@@ -33,18 +34,39 @@ final class NewPostViewReactor: Reactor, Stepper {
             ]
             return section
         }
+        
+        var isLoading: Bool = false
     }
     
-    init(_ steps: PublishRelay<Step>?) {
+    fileprivate let rankService: RankServiceType
+    init(_ steps: PublishRelay<Step>?, rankService: RankServiceType) {
         self.steps = steps ?? PublishRelay<Step>()
-        
         self.initialState = State()
+        
+        self.rankService = rankService
     }
     
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .refresh:
-            return Observable.just(Mutation.refresh)
+            
+            return Observable.concat([
+                
+                Observable.just(Mutation.setLoading(true)),
+                
+                rankService.getPosts("latest", "").asObservable()
+                    .map { result in
+                        switch result {
+                        case let .success(posts):
+                            return Mutation.refresh(posts.post)
+                        case let .error(error):
+                            print(error)
+                            return Mutation.refresh([])
+                        }
+                    },
+                
+                Observable.just(Mutation.setLoading(false))
+            ])
         }
     }
     
@@ -52,12 +74,15 @@ final class NewPostViewReactor: Reactor, Stepper {
         var state = state
         
         switch mutation {
-        case .refresh:
+        case let .refresh(posts):
             state.postViewSectionItems.removeAll()
             
-            for i in 0...5 {
-                state.postViewSectionItems.append(.post(PostListCellReactor(idx: i, stickerCount: 1, title: "안녕", writer: "익명", date: Date(), comment: i, like: 4, unlike: 5)))
+            posts.forEach {
+                state.postViewSectionItems.append(.post(PostListCellReactor(idx: $0.id, stickerCount: $0.stickerCount, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
             }
+            
+        case let .setLoading(isLoading):
+            state.isLoading = isLoading
         }
         
         return state
