@@ -18,7 +18,7 @@ final class HotPostViewReactor: Reactor, Stepper {
     let initialState: State
     
     enum Action {
-        case changeSegment(Int)
+        case refresh(Int)
     }
     
     enum Mutation {
@@ -26,7 +26,14 @@ final class HotPostViewReactor: Reactor, Stepper {
     }
     
     struct State {
-        
+        var currentIdx = 0
+        var postViewSectionItems: [PostViewSectionItem] = []
+        var sections: [PostViewSection] {
+            let section: [PostViewSection] = [
+                .post(self.postViewSectionItems),
+            ]
+            return section
+        }
     }
     
     init(_ steps: PublishRelay<Step>?) {
@@ -36,7 +43,7 @@ final class HotPostViewReactor: Reactor, Stepper {
     
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case let .changeSegment(idx):
+        case let .refresh(idx):
             return Observable.just(Mutation.refresh(idx))
         }
     }
@@ -46,7 +53,12 @@ final class HotPostViewReactor: Reactor, Stepper {
         
         switch mutation {
         case let .refresh(idx):
-            break
+            state.postViewSectionItems.removeAll()
+            
+            for i in 0...5 {
+                state.postViewSectionItems.append(.post(PostListCellReactor(idx: i, stickerCount: 1, title: "안녕", writer: "익명", date: Date(), comment: i, like: 4, unlike: 5)))
+            }
+            state.currentIdx = idx
         }
         
         return state
