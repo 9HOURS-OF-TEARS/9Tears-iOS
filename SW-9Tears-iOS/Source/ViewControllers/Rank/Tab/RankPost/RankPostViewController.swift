@@ -12,6 +12,8 @@ class RankPostViewController: BaseViewController, View {
     
     typealias Reactor = RankPostViewReactor
     
+    let cell = RankCollectionViewCell()
+    
     private lazy var rankView = RankView.init(frame: self.view.frame)
     
     private func setupCollectionView() {
@@ -33,8 +35,8 @@ class RankPostViewController: BaseViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view = rankView
+        setupCollectionView()
     }
 
     func bind(reactor: RankPostViewReactor) {
@@ -53,11 +55,14 @@ extension RankPostViewController: UICollectionViewDelegate, UICollectionViewData
             return UICollectionViewCell()
         }
         
+        cell.stickerImageView.image = UIImage(named: "PostSticker")
+        cell.stickerImageView.tintColor = UIColor.init(named: "OrangeColor")
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: 330, height: 300)
+        return CGSize.init(width: 300, height: 300)
     }
     
 }
