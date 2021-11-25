@@ -10,7 +10,10 @@ import Foundation
 import RxSwift
 
 protocol RankServiceType: AnyObject {
+    
     func getPosts(_ criterion: String, _ duration: String) -> Single<NetworkResultWithValue<Posts>>
+    
+    func createPost(_ title: String, _ contents: String) -> Single<NetworkResult>
 }
           
 final class RankService: RankServiceType {
@@ -23,6 +26,10 @@ final class RankService: RankServiceType {
     
     func getPosts(_ criterion: String, _ duration: String) -> Single<NetworkResultWithValue<Posts>> {
         return network.requestObject(.getList(criterion, duration), type: Posts.self)
+    }
+    
+    func createPost(_ title: String, _ contents: String) -> Single<NetworkResult> {
+        return network.requestWithoutMapping(.createPost(title, contents))
     }
     
 }
