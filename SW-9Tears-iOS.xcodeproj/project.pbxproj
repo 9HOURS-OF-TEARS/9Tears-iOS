@@ -52,6 +52,7 @@
 		62EC2B3D274F2BFB003EDC25 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B3C274F2BFB003EDC25 /* SplashViewController.swift */; };
 		62EC2B41274F3897003EDC25 /* PostListCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B40274F3897003EDC25 /* PostListCellReactor.swift */; };
 		62EC2B44274F3ACD003EDC25 /* PostViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B43274F3ACD003EDC25 /* PostViewSection.swift */; };
+		62EC2B46274F4058003EDC25 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B45274F4058003EDC25 /* Date.swift */; };
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
@@ -130,6 +131,7 @@
 		62EC2B3C274F2BFB003EDC25 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		62EC2B40274F3897003EDC25 /* PostListCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCellReactor.swift; sourceTree = "<group>"; };
 		62EC2B43274F3ACD003EDC25 /* PostViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewSection.swift; sourceTree = "<group>"; };
+		62EC2B45274F4058003EDC25 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +345,7 @@
 			children = (
 				627E3766274E63F5005B037F /* SnapKit */,
 				62EC2B1A274EA753003EDC25 /* UITextField.swift */,
+				62EC2B45274F4058003EDC25 /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -759,6 +762,7 @@
 				62EC2B2E274F0E71003EDC25 /* NewPostViewReactor.swift in Sources */,
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
 				62EC2B30274F0F9C003EDC25 /* PostViewController.swift in Sources */,
+				62EC2B46274F4058003EDC25 /* Date.swift in Sources */,
 				62EC2B1B274EA753003EDC25 /* UITextField.swift in Sources */,
 				62EC2B11274EA321003EDC25 /* UIViewPreview.swift in Sources */,
 				627E375A274E5A26005B037F /* SignInViewReactor.swift in Sources */,
