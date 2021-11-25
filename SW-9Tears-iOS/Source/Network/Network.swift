@@ -37,4 +37,15 @@ extension Network {
                 return .error(error)
             }.catchErrorJustReturn(.error(.unknown))
     }
+    
+    func requestWithoutMapping(_ target: API) -> Single<NetworkResult> {
+        return request(target)
+            .map { result in
+                guard let error = NetworkError(rawValue: result.statusCode) else {
+                    return .success
+                }
+                return .error(error)
+            }.catchErrorJustReturn(.error(.unknown))
+    }
+    
 }

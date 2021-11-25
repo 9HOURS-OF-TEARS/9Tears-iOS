@@ -65,6 +65,8 @@
 		62EC2B5F274F8127003EDC25 /* BaseAPI1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B5E274F8127003EDC25 /* BaseAPI1.swift */; };
 		62EC2B61274F8382003EDC25 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B60274F8382003EDC25 /* AuthAPI.swift */; };
 		62EC2B64274F8876003EDC25 /* RequestLogginPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */; };
+		62EC2B67274F88D3003EDC25 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B66274F88D3003EDC25 /* AuthService.swift */; };
+		62EC2B69274F8C88003EDC25 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B68274F8C88003EDC25 /* AccessToken.swift */; };
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
@@ -162,6 +164,8 @@
 		62EC2B5E274F8127003EDC25 /* BaseAPI1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI1.swift; sourceTree = "<group>"; };
 		62EC2B60274F8382003EDC25 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogginPlugin.swift; sourceTree = "<group>"; };
+		62EC2B66274F88D3003EDC25 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		62EC2B68274F8C88003EDC25 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +266,7 @@
 		627E3734274E22B1005B037F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				62EC2B65274F88B2003EDC25 /* Service */,
 				62EC2B5A274F7DD1003EDC25 /* Model */,
 				627E3739274E237A005B037F /* Application */,
 				62EC2B42274F3AB5003EDC25 /* Section */,
@@ -539,6 +544,7 @@
 			isa = PBXGroup;
 			children = (
 				62EC2B5B274F7DEE003EDC25 /* ModelType.swift */,
+				62EC2B68274F8C88003EDC25 /* AccessToken.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -558,6 +564,14 @@
 				62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */,
 			);
 			path = Plugin;
+			sourceTree = "<group>";
+		};
+		62EC2B65274F88B2003EDC25 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				62EC2B66274F88D3003EDC25 /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -900,6 +914,7 @@
 				627E3762274E5FFF005B037F /* NetworkResult.swift in Sources */,
 				627E373F274E4B64005B037F /* RankStep.swift in Sources */,
 				627E3747274E54FF005B037F /* SignFlow.swift in Sources */,
+				62EC2B67274F88D3003EDC25 /* AuthService.swift in Sources */,
 				62EC2B5F274F8127003EDC25 /* BaseAPI1.swift in Sources */,
 				627E3768274E6403005B037F /* SnapKit.swift in Sources */,
 				627E3760274E5F99005B037F /* Network.swift in Sources */,
@@ -927,6 +942,7 @@
 				EF9152F4274F30000089770C /* RankCommentViewController.swift in Sources */,
 				627E3741274E4C96005B037F /* AppFlow.swift in Sources */,
 				627E3764274E6021005B037F /* NetworkError.swift in Sources */,
+				62EC2B69274F8C88003EDC25 /* AccessToken.swift in Sources */,
 				62EC2B50274F5BD8003EDC25 /* MyPageViewController.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
 				62EC2B64274F8876003EDC25 /* RequestLogginPlugin.swift in Sources */,
