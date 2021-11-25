@@ -11,6 +11,11 @@ import Then
 
 class MyBadgesViewController: UIViewController {
     
+    private let backButton = UIButton(type: .system).then {
+        $0.setImage(.init(named: "BackButton"), for: .normal)
+        $0.tintColor = .black
+    }
+    
     private let titleLabel = UILabel().then {
         $0.text = "내 뱃지"
         $0.font = .init(name: "NotoSansKR-Regular", size: 20)
@@ -70,7 +75,14 @@ class MyBadgesViewController: UIViewController {
     }
     
     private func setUpSubViews() {
-        [titleLabel, badgeImageView1, badgeImageView2, badgeImageView3, badgeImageView4, badgeImageView5, badgeImageView6].forEach({ self.view.addSubview($0) })
+        [backButton, titleLabel, badgeImageView1, badgeImageView2, badgeImageView3, badgeImageView4, badgeImageView5, badgeImageView6].forEach({ self.view.addSubview($0) })
+        
+        backButton.snp.makeConstraints {
+            $0.width.equalTo(15)
+            $0.height.equalTo(25)
+            $0.top.equalTo(26)
+            $0.leading.equalTo(24)
+        }
         
         titleLabel.snp.makeConstraints {
             $0.top.equalTo(21)

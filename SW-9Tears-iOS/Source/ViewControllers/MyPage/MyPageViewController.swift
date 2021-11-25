@@ -32,6 +32,11 @@ final class MyPageViewController: BaseViewController, View {
     // MARK: - Properties
     
     // MARK: - UI
+    private let backButton = UIButton(type: .system).then {
+        $0.setImage(.init(named: "BackButton"), for: .normal)
+        $0.tintColor = .black
+    }
+    
     private let profileImage = UIImageView().then {
         $0.image = UIImage.init(named: "Profile")
     }
@@ -127,11 +132,18 @@ final class MyPageViewController: BaseViewController, View {
     override func setupLayout() {
         super.setupLayout()
         
-        [profileImage, nickNameLabel, editButton, commentCountImageView, rankCommentLabel, rankCommentCountLabel, postCountImageView, rankPostCountLabel, rankPostLabel, myPostButton, myPostLabel, badgeButton, badgeLabel, smileButton, smileLabel].forEach({ self.view.addSubview($0) })
+        [backButton, profileImage, nickNameLabel, editButton, commentCountImageView, rankCommentLabel, rankCommentCountLabel, postCountImageView, rankPostCountLabel, rankPostLabel, myPostButton, myPostLabel, badgeButton, badgeLabel, smileButton, smileLabel].forEach({ self.view.addSubview($0) })
     }
     
     override func setupConstraints() {
         super.setupConstraints()
+        
+        backButton.snp.makeConstraints {
+            $0.width.equalTo(15)
+            $0.height.equalTo(25)
+            $0.top.equalTo(26)
+            $0.leading.equalTo(24)
+        }
         
         profileImage.snp.makeConstraints {
             $0.height.width.equalTo(90)
