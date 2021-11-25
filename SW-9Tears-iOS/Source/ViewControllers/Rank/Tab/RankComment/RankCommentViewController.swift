@@ -7,10 +7,25 @@
 
 import UIKit
 import ReactorKit
+import Then
+import SnapKit
 
 class RankCommentViewController: BaseViewController, View {
     
     typealias Reactor = RankCommentViewReactor
+    
+    private lazy var rankView = RankView.init(frame: self.view.frame)
+    
+    static func instance() -> RankCommentViewController {
+        return RankCommentViewController.init(reactor: Reactor, nibName: nil, bundle: nil)
+    }
+    
+    private func setupCollectionView() {
+        rankView.collectionView.delegate = self
+        rankView.collectionView.dataSource = self
+        rankView.collectionView.register(RankCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
+    }
+    
     
     init(reactor: Reactor) {
         super.init()
@@ -25,11 +40,31 @@ class RankCommentViewController: BaseViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view = rankView
+        setupCollectionView()
     }
     
     func bind(reactor: RankCommentViewReactor) {
         
     }
+}
+
+
+extension RankCommentViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as? RankCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: 330, height: 300)
+    }
+    
 }

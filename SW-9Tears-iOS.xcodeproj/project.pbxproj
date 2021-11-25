@@ -68,6 +68,8 @@
 		EF9152F4274F30000089770C /* RankCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F3274F30000089770C /* RankCommentViewController.swift */; };
 		EF9152F6274F43A60089770C /* RankPostViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F5274F43A50089770C /* RankPostViewReactor.swift */; };
 		EF9152FA274F49BC0089770C /* RankCommentViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F9274F49BC0089770C /* RankCommentViewReactor.swift */; };
+		EFC07A90274F6199008B69A1 /* RankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC07A8F274F6199008B69A1 /* RankCollectionViewCell.swift */; };
+		EFC07A92274F62D9008B69A1 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC07A91274F62D9008B69A1 /* RankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,8 @@
 		EF9152F3274F30000089770C /* RankCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCommentViewController.swift; sourceTree = "<group>"; };
 		EF9152F5274F43A50089770C /* RankPostViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankPostViewReactor.swift; sourceTree = "<group>"; };
 		EF9152F9274F49BC0089770C /* RankCommentViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCommentViewReactor.swift; sourceTree = "<group>"; };
+		EFC07A8F274F6199008B69A1 /* RankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFC07A91274F62D9008B69A1 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +416,7 @@
 		62EC2B17274EA641003EDC25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EFC07A8B274F594D008B69A1 /* CollectionView */,
 				62EC2B3E274F37AE003EDC25 /* TableView */,
 				62EC2B18274EA65A003EDC25 /* RankTextField.swift */,
 				62EC2B1C274EAB63003EDC25 /* RankButton.swift */,
@@ -580,6 +585,15 @@
 				EF9152F9274F49BC0089770C /* RankCommentViewReactor.swift */,
 			);
 			path = RankComment;
+			sourceTree = "<group>";
+		};
+		EFC07A8B274F594D008B69A1 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EFC07A8F274F6199008B69A1 /* RankCollectionViewCell.swift */,
+				EFC07A91274F62D9008B69A1 /* RankView.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -840,6 +854,7 @@
 				62EC2B2C274F0E61003EDC25 /* NewPostViewController.swift in Sources */,
 				62EC2B44274F3ACD003EDC25 /* PostViewSection.swift in Sources */,
 				62EC2B1D274EAB63003EDC25 /* RankButton.swift in Sources */,
+				EFC07A92274F62D9008B69A1 /* RankView.swift in Sources */,
 				EF9152F6274F43A60089770C /* RankPostViewReactor.swift in Sources */,
 				EF9152FA274F49BC0089770C /* RankCommentViewReactor.swift in Sources */,
 				EF9152F2274F2FF80089770C /* RankPostViewController.swift in Sources */,
@@ -860,6 +875,7 @@
 				627E3745274E4F0D005B037F /* SplashFlow.swift in Sources */,
 				62EC2B30274F0F9C003EDC25 /* PostViewController.swift in Sources */,
 				62EC2B46274F4058003EDC25 /* Date.swift in Sources */,
+				EFC07A90274F6199008B69A1 /* RankCollectionViewCell.swift in Sources */,
 				62EC2B1B274EA753003EDC25 /* UITextField.swift in Sources */,
 				EF9152EF274F2F9F0089770C /* RankViewController.swift in Sources */,
 				62EC2B57274F64A3003EDC25 /* HotPostViewReactor.swift in Sources */,

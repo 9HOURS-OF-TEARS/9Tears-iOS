@@ -12,6 +12,18 @@ class RankPostViewController: BaseViewController, View {
     
     typealias Reactor = RankPostViewReactor
     
+    private lazy var rankView = RankView.init(frame: self.view.frame)
+    
+    static func instance() -> RankPostViewController {
+        return RankPostViewController.init(reactor: Reactor, nibName: nil, bundle: nil)
+    }
+    
+    private func setupCollectionView() {
+        rankView.collectionView.delegate = self
+        rankView.collectionView.dataSource = self
+        rankView.collectionView.register(RankCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
+    }
+    
     init(reactor: Reactor) {
         super.init()
         defer {
@@ -34,3 +46,23 @@ class RankPostViewController: BaseViewController, View {
     }
     
 }
+
+extension RankPostViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as? RankCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: 330, height: 300)
+    }
+    
+}
+
