@@ -62,6 +62,7 @@ final class HotPostViewReactor: Reactor, Stepper {
                         case let .success(posts):
                             return Mutation.refresh(posts.post, idx)
                         case let .error(error):
+                            print(error)
                             return Mutation.refresh([], idx)
                         }
                     },
@@ -79,7 +80,7 @@ final class HotPostViewReactor: Reactor, Stepper {
             state.postViewSectionItems.removeAll()
             
             posts.forEach {
-                state.postViewSectionItems.append(.post(PostListCellReactor(idx: <#T##Int#>, stickerCount: <#T##Int#>, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
+                state.postViewSectionItems.append(.post(PostListCellReactor(idx: $0.id, stickerCount: $0.stickerCount, title: $0.title, writer: $0.nickname, date: $0.createdAt, comment: $0.commentCount, like: $0.likeCount, unlike: $0.dislikeCount)))
             }
             
             state.currentIdx = idx
