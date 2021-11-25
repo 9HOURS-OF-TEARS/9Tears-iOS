@@ -14,6 +14,8 @@ target 'SW-9Tears-iOS' do
   pod 'Loaf'
   pod 'DropDown'
   pod 'Tabman'
+  pod 'XLPagerTabStrip'
+  pod 'IQKeyboardManagerSwift'
 
   # Architecture
   pod 'ReactorKit'
