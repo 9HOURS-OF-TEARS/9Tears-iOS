@@ -64,6 +64,7 @@
 		62EC2B5C274F7DEE003EDC25 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B5B274F7DEE003EDC25 /* ModelType.swift */; };
 		62EC2B5F274F8127003EDC25 /* BaseAPI1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B5E274F8127003EDC25 /* BaseAPI1.swift */; };
 		62EC2B61274F8382003EDC25 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B60274F8382003EDC25 /* AuthAPI.swift */; };
+		62EC2B64274F8876003EDC25 /* RequestLogginPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */; };
 		9CB0C229CA6EFD1146697215 /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */; };
 		C4E488DC364BEE42EA6B29AC /* Pods_SW_9Tears_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C006BE57DAB23CB85E00F /* Pods_SW_9Tears_iOS.framework */; };
 		C8E39DFA3FBE03745E108186 /* Pods_SW_9Tears_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */; };
@@ -160,6 +161,7 @@
 		62EC2B5B274F7DEE003EDC25 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		62EC2B5E274F8127003EDC25 /* BaseAPI1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI1.swift; sourceTree = "<group>"; };
 		62EC2B60274F8382003EDC25 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogginPlugin.swift; sourceTree = "<group>"; };
 		6D202459CFCF91CAB66866D4 /* Pods_SW_9Tears_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BA2AA44BB480ADDB76109 /* Pods-9Tears-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9Tears-iOS.debug.xcconfig"; path = "Target Support Files/Pods-9Tears-iOS/Pods-9Tears-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED7919B3899C29AB313179E /* Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SW_9Tears_iOS_SW_9Tears_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +373,7 @@
 		627E375E274E5F6E005B037F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				62EC2B62274F8769003EDC25 /* Plugin */,
 				62EC2B5D274F810A003EDC25 /* API */,
 				627E375F274E5F99005B037F /* Network.swift */,
 				627E3761274E5FFF005B037F /* NetworkResult.swift */,
@@ -547,6 +550,14 @@
 				62EC2B60274F8382003EDC25 /* AuthAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		62EC2B62274F8769003EDC25 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				62EC2B63274F8876003EDC25 /* RequestLogginPlugin.swift */,
+			);
+			path = Plugin;
 			sourceTree = "<group>";
 		};
 		808733A000B7C2F27259AB20 /* Pods */ = {
@@ -918,6 +929,7 @@
 				627E3764274E6021005B037F /* NetworkError.swift in Sources */,
 				62EC2B50274F5BD8003EDC25 /* MyPageViewController.swift in Sources */,
 				627E3705274E20D5005B037F /* AppDelegate.swift in Sources */,
+				62EC2B64274F8876003EDC25 /* RequestLogginPlugin.swift in Sources */,
 				62EC2B15274EA368003EDC25 /* DeviceType.swift in Sources */,
 				627E3773274E68B1005B037F /* Preview.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
