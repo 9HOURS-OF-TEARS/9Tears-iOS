@@ -1,18 +1,17 @@
 //
-//  SignInViewController.swift
-//  9Tears-iOS
+//  SignUpViewController.swift
+//  SW-9Tears-iOS
 //
-//  Created by 김부성 on 2021/11/24.
+//  Created by 김부성 on 2021/11/25.
 //
 
 import UIKit
 
 import ReactorKit
-import Atributika
 
-final class SignInViewController: BaseViewController, View {
+final class SignUpViewController: BaseViewController, View {
     
-    typealias Reactor = SignInViewReactor
+    typealias Reactor = SignUpViewReactor
     
     // MARK: - Constants
     fileprivate struct Metric {
@@ -27,8 +26,10 @@ final class SignInViewController: BaseViewController, View {
     fileprivate struct Font {
         static let titleFont = UIFont(name: "BlackHanSans-Regular", size: 60)
         static let subtitleFont = UIFont.systemFont(ofSize: 16, weight: .regular)
+    }
+    
+    fileprivate struct Style {
         
-        static let signUpFont = Style.font(UIFont(name: "NotoSansKR-Regular", size: 13)!).foregroundColor(UIColor.init(named: "SecondColor")!)
     }
     
     // MARK: - Properties
@@ -51,6 +52,11 @@ final class SignInViewController: BaseViewController, View {
         $0.image = UIImage(named: "logo")
     }
     
+    let nicknameTextField = RankTextField().then {
+        $0.textField.keyboardType = .default
+        $0.textField.placeholder = "닉네임을 입력해주세요."
+    }
+    
     let emailTextField = RankTextField().then {
         $0.textField.keyboardType = .emailAddress
         $0.textField.placeholder = "이메일을 입력해주세요."
@@ -62,12 +68,8 @@ final class SignInViewController: BaseViewController, View {
         $0.textField.isSecureTextEntry = true
     }
     
-    let signInButton = RankButton().then {
-        $0.setTitle("Log in", for: .normal)
-    }
-    
-    let signUpButton = UIButton(type: .system).then {
-        $0.setAttributedTitle("회원이 아니신가요?".styleAll(Font.signUpFont).attributedString, for: .normal)
+    let signUpButton = RankButton().then {
+        $0.setTitle("Sign up", for: .normal)
     }
 
     // MARK: - Inintializing
@@ -100,9 +102,9 @@ final class SignInViewController: BaseViewController, View {
         self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.image)
         self.view.addSubview(self.subtitleLabel)
+        self.view.addSubview(self.nicknameTextField)
         self.view.addSubview(self.emailTextField)
         self.view.addSubview(self.passwordTextField)
-        self.view.addSubview(self.signInButton)
         self.view.addSubview(self.signUpButton)
     }
     
@@ -125,8 +127,15 @@ final class SignInViewController: BaseViewController, View {
             $0.left.equalTo(self.titleLabel)
         }
         
+        self.nicknameTextField.snp.makeConstraints {
+            $0.top.equalTo(self.subtitleLabel.snp.bottom).offset(50)
+            $0.left.equalToSuperview().offset(Metric.viewSide)
+            $0.right.equalToSuperview().offset(-Metric.viewSide)
+            $0.height.equalTo(Metric.textFieldHeight)
+        }
+        
         self.emailTextField.snp.makeConstraints {
-            $0.top.equalTo(self.subtitleLabel.snp.bottom).offset(80)
+            $0.top.equalTo(self.nicknameTextField.snp.bottom).offset(20)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.textFieldHeight)
@@ -139,16 +148,11 @@ final class SignInViewController: BaseViewController, View {
             $0.height.equalTo(Metric.textFieldHeight)
         }
         
-        self.signInButton.snp.makeConstraints {
+        self.signUpButton.snp.makeConstraints {
             $0.top.equalTo(self.passwordTextField.snp.bottom).offset(30)
             $0.left.equalToSuperview().offset(Metric.viewSide)
             $0.right.equalToSuperview().offset(-Metric.viewSide)
             $0.height.equalTo(Metric.buttonHiehgt)
-        }
-        
-        self.signUpButton.snp.makeConstraints {
-            $0.top.equalTo(self.signInButton.snp.bottom).offset(10)
-            $0.centerX.equalToSuperview()
         }
     }
     
@@ -157,3 +161,4 @@ final class SignInViewController: BaseViewController, View {
         
     }
 }
+

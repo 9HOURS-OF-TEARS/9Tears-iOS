@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import RxFlow
 import RxViewController
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let appFlow = AppFlow(window: window, services: appSerivces)
         
         let appStepper = OneStepper(withSingleStep: RankStep.splashIsRequired)
+        
+        IQKeyboardManager.shared.enable = true
         
         // Setup Rxflow
         self.coordinator.coordinate(flow: appFlow, with: appStepper)
