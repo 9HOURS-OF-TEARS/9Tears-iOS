@@ -75,6 +75,7 @@ final class WriteViewController: BaseViewController, View {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "SecondColor")!)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

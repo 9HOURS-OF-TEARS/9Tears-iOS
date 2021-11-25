@@ -82,6 +82,8 @@ class PostViewController: TabmanViewController, View {
 
         // Add to view
         addBar(bar, dataSource: self, at: .top)
+        
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "SecondColor")!)
     }
     
     override func viewWillLayoutSubviews() {

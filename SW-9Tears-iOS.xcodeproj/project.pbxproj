@@ -79,6 +79,8 @@
 		EF7350E3274FDF3B00FEBE27 /* PatchNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E2274FDF3B00FEBE27 /* PatchNickNameViewController.swift */; };
 		EF7350E7274FE4AF00FEBE27 /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E6274FE4AE00FEBE27 /* MyPostsViewController.swift */; };
 		EF7350EA274FE67300FEBE27 /* MyBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350E9274FE67300FEBE27 /* MyBadgesViewController.swift */; };
+		EF7350EC274FF1CA00FEBE27 /* UIViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350EB274FF1CA00FEBE27 /* UIViewcontroller.swift */; };
+		EF7350EE274FF2B100FEBE27 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350ED274FF2B100FEBE27 /* ButtonViewController.swift */; };
 		EF9152EF274F2F9F0089770C /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152EE274F2F9F0089770C /* RankViewController.swift */; };
 		EF9152F2274F2FF80089770C /* RankPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F1274F2FF80089770C /* RankPostViewController.swift */; };
 		EF9152F4274F30000089770C /* RankCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9152F3274F30000089770C /* RankCommentViewController.swift */; };
@@ -194,6 +196,8 @@
 		EF7350E2274FDF3B00FEBE27 /* PatchNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNickNameViewController.swift; sourceTree = "<group>"; };
 		EF7350E6274FE4AE00FEBE27 /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
 		EF7350E9274FE67300FEBE27 /* MyBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBadgesViewController.swift; sourceTree = "<group>"; };
+		EF7350EB274FF1CA00FEBE27 /* UIViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewcontroller.swift; sourceTree = "<group>"; };
+		EF7350ED274FF2B100FEBE27 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		EF9152EE274F2F9F0089770C /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		EF9152F1274F2FF80089770C /* RankPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankPostViewController.swift; sourceTree = "<group>"; };
 		EF9152F3274F30000089770C /* RankCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCommentViewController.swift; sourceTree = "<group>"; };
@@ -411,6 +415,7 @@
 				627E3766274E63F5005B037F /* SnapKit */,
 				62EC2B1A274EA753003EDC25 /* UITextField.swift */,
 				62EC2B45274F4058003EDC25 /* Date.swift */,
+				EF7350EB274FF1CA00FEBE27 /* UIViewcontroller.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				62EC2B3E274F37AE003EDC25 /* TableView */,
 				62EC2B18274EA65A003EDC25 /* RankTextField.swift */,
 				62EC2B1C274EAB63003EDC25 /* RankButton.swift */,
+				EF7350ED274FF2B100FEBE27 /* ButtonViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -992,6 +998,7 @@
 				62EC2B61274F8382003EDC25 /* AuthAPI.swift in Sources */,
 				EF9152EF274F2F9F0089770C /* RankViewController.swift in Sources */,
 				62EC2B57274F64A3003EDC25 /* HotPostViewReactor.swift in Sources */,
+				EF7350EC274FF1CA00FEBE27 /* UIViewcontroller.swift in Sources */,
 				62EC2B11274EA321003EDC25 /* UIViewPreview.swift in Sources */,
 				62A48BF3274FD377001016F1 /* AuthPlugin.swift in Sources */,
 				62EC2B71274FC2D9003EDC25 /* RankAPI.swift in Sources */,
@@ -1008,6 +1015,7 @@
 				62EC2B73274FCC81003EDC25 /* post.swift in Sources */,
 				62EC2B6F274FC2C5003EDC25 /* RankService.swift in Sources */,
 				627E3773274E68B1005B037F /* Preview.swift in Sources */,
+				EF7350EE274FF2B100FEBE27 /* ButtonViewController.swift in Sources */,
 				627E3743274E4D24005B037F /* AppStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,6 +23,7 @@ class MyPostsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar(title: "마이페이지", backgroundColor: UIColor.init(named: "AccentColor")!)
         self.view.addSubview(titleLabel)
         self.view.addSubview(backButton)
         
