@@ -14,10 +14,6 @@ class RankPostViewController: BaseViewController, View {
     
     private lazy var rankView = RankView.init(frame: self.view.frame)
     
-    static func instance() -> RankPostViewController {
-        return RankPostViewController.init(reactor: Reactor, nibName: nil, bundle: nil)
-    }
-    
     private func setupCollectionView() {
         rankView.collectionView.delegate = self
         rankView.collectionView.dataSource = self
